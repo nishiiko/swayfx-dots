@@ -1,0 +1,137 @@
+configuration {
+	drun-display-format: "{name}";
+	font: "JetBrainsMono Nerd Font 16";
+	modi: "drun,run,window,emoji";
+	sort: true;
+	case-sensitivity: false;
+	sorting-method: "fzf";
+	hide-scrollabr: true;
+	terminal: "kitty";
+	sidebar-mode: true;
+	hover-select: false;
+	entry {
+		max-history: 0;
+	}
+}
+
+* {
+	bg: #2a1225b0;
+	border: #ad5da6;
+	fgt: #dfdfdfdf;
+	fgts: #ffffffff;
+	bg-selected: #bd5da6a0;
+	text-color: @fgts;
+	background: @bg;
+	active-background: @bg;
+	urgent-background: @bg;
+}
+
+
+#window {
+	border: 4;
+	border-color: #ad5da6;
+	border-radius: 15;
+	background-color: @background;
+	width: 40%;
+}
+
+#mainbox {
+	border: 0;
+	padding: 5;
+}
+
+#case-indicator {
+	text-color: @fgt;
+	margin: 0px 0px 0px 5px;
+}
+
+#textbox {
+	text-color: @fgt;
+}
+#listview {
+	fixed-height: 0;
+	scrollbar: false;
+	padding: 0px 0px 0px 0px;
+	lines: 6;
+	border-color: #aaaaaa00;
+}
+
+#element {
+	border-radius: 11;
+	border: 0;
+	padding: 5px 5px 5px 10px;
+	margin: 5px 0px 0px 0px;
+}
+
+#element.normal.normal {
+	background-color: #00000000;
+	text-color: @fgt;
+}
+
+#element.selected.normal {
+	background-color: @bg-selected;
+	text-color: @fgts;
+}
+
+#element.alternate.normal {
+	background-color: #00000000;
+	text-color: @fgt;
+}
+
+#element.normal.active {
+	background-color: #00000000;
+	text-color: @fgt;
+}
+
+#element.selected.active {
+	background-color: @bg-selected;
+	text-color: @fgts;
+}
+
+#element.alternate.active {
+	background-color: #00000000;
+	text-color: @fgt;
+}
+
+#element.normal.urgent {
+	background-color: #00000000;
+	text-color: @fgt;
+}
+
+#element.selected.urgent {
+	background-color: @bg-selected;
+	text-color: @fgts;
+}
+
+#element.alternate.urgent {
+	background-color: #00000000;
+	text-color: @fgt;
+}
+
+#textbox {
+	text-color: @fgt;
+}
+
+#prompt {
+	text-color: @fgt;
+	margin: 0px 0px 5px 10px;
+}
+#entry {
+	text-color: @fgt;
+}
+
+#textbox-prompt-colon {
+	expand: false;
+	text-color: @fgts;
+}
+
+#button {
+	text-color: @fgt;
+	margin: 5px 0px 0px 0px;
+}
+
+#button.selected {
+	background-color: @bg-selected;
+	border-radius: 11px;
+	text-color: @fgts;
+}

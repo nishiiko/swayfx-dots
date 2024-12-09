@@ -1,0 +1,12 @@
+exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec gentoo-pipewire-launcher restart &
+# exec mpv --no-video --volume=100 ~/.config/sway/extra/startup.wav &
+exec swww-daemon &
+exec swww img ~/Pictures/Wallpapers/Celeste.png --transition-type grow --transition-duration 3 &
+exec waybar &
+exec dunst &
+exec /usr/libexec/polkit-gnome-authentication-agent-1 &
+exec /usr/libexec/xdg-desktop-portal-wlr &
+exec /usr/libexec/xdg-desktop-portal-gtk &
+exec otd-daemon &
+exec ~/Scripts/arrpc.sh &

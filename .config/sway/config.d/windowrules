@@ -1,0 +1,14 @@
+for_window [class=".*"] border pixel 4 
+for_window [app_id=".*"] border pixel 4 
+#for_window [app_id=".*"] opacity 0.95 
+
+# for_window [class=".*"] allow_tearing yes
+# for_window [app_id=".*"] allow_tearing yes
+for_window [app_id="pavucontrol"] floating enable
+for_window [app_id="vesktop-bin"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
+
+assign [app_id="kitty"] 1
+assign [app_id="firefox"] 2
+assign [app_id="vesktop|discord"] 3
+assign [class="vesktop"] 3
