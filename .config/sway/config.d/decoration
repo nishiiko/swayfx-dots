@@ -17,8 +17,8 @@ blur_passes 3
 blur_radius 4
 
 layer_effects waybar blur enable
-layer_effects rofi blur enable
-layer_effects notifications blur enable
+layer_effects rofi blur enable; corner_radius 15
+layer_effects notifications blur enable; corner_radius 15
 
 default_border pixel 4
 default_floating_border pixel 4
