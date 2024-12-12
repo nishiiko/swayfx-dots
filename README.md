@@ -9,7 +9,7 @@ kitty\
 rofi\
 swappy\
 swaylock\
-waybar\
+waybar
 
 ![alt text](screenshot.png)
 
