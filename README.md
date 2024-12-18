@@ -6,7 +6,7 @@ yell at me in issues if something no worky
 gentoo linux\
 openrc
 
-## things you need (maybe):\
+## things you need (maybe):
 swayfx (duh)\
 dunst\
 kitty\
