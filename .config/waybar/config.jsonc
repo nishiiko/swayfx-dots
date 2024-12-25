@@ -9,9 +9,10 @@
     "margin-bottom": 0,
     // Choose the order of the modules
     "modules-left": [
-        "wlr/taskbar",
+		"wlr/taskbar",
         "sway/mode",
         "tray",
+		"custom/waybar-scrolling-mpris",
 		"sway/scratchpad"
 	],
     "modules-center": [
@@ -24,6 +25,23 @@
         "battery",
         "clock"
     ],
+
+	"custom/waybar-scrolling-mpris": {
+	    "format": "{}",
+	    "display-format": "{icon}  {artist} - {title}",
+	    "tooltip-format": "",
+		"on-click": "playerctl play-pause",
+	    "on-click-right": "playerctl next",
+		"on-click-middle": "playerctl previous",
+	    "exec": "~/.config/waybar/scripts/waybar-scrolling-mpris ~/.config/waybar/config.jsonc",
+	    "icons": {
+	        "Paused": "",
+	        "Playing": "",
+	        "Stopped": "  Stopped"
+	    },
+	    "length": 30
+	},
+	
 
 	"group/hardware": {
 		"orientation": "horizontal",
@@ -140,7 +158,7 @@
         "format": "{capacity}% {icon}  {power:2.1f}W",
         "format-charging": "{capacity}%  {power:2.1f}W",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon} {power:2.1f}W",
+        "format-alt": "{time} {icon}  {power:2.1f}W",
         "design-capacity": true,
 		// "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -172,12 +190,10 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " {volume}% ",
-        "format-source-muted": " ",
+        "format": "{volume}% {icon} ",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-bluetooth-muted": " {icon} ",
+        "format-muted": " ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",

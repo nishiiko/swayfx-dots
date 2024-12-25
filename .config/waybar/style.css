@@ -28,15 +28,10 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0px 10px;
-    color: alpha(#969696, 1);
+    padding: 0px 3px;
+    margin: 5px 3px;
+	color: alpha(#969696, 1);
 	background-color: transparent;
-	margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-right: 3px;
     transition: all 0.2s cubic-bezier(0,0,.2,1)
 }
 
@@ -45,12 +40,9 @@ button:hover {
 }
 
 #workspaces button.focused {
-    color: alpha(#FFFFFF, 1);
+    padding: 0px 15px;
+	color: alpha(#FFFFFF, 1);
     background-color: #662266;
-	margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 3px;
     transition: all 0.25s cubic-bezier(0,0,.2,1)
 }
 
@@ -82,14 +74,8 @@ button:hover {
     background-color: transparent;
 }
 
-#battery {
-    background-color: transparent; 
-    color: #FFFFFF;
-}
-
 #battery.charging, #battery.plugged {
     color: #BBFFBB;
-    background-color: transparent;
 }
 
 @keyframes blink {
@@ -138,7 +124,7 @@ label:focus {
 #wireplumber.muted {
     background-color: #f53c3c;
 }
-
+/*
 #custom-media {
     background-color: #66cc99;
     color: #2a5c45;
@@ -152,7 +138,7 @@ label:focus {
 #custom-media.custom-vlc {
     background-color: #ffa000;
 }
-
+*/
 #temperature {
     background-color: transparent;
     color: #FFFFFF;
@@ -221,10 +207,14 @@ label:focus {
 	background-color: transparent;
 }
 
+#custom-waybar-scrolling-mpris,
+#custom-spotify,
+#custom-media,
 #custom-power,
 #pulseaudio,
 #scratchpad,
 #hardware,
+#network,
 #battery,
 #privacy,
 #taskbar,
@@ -239,6 +229,7 @@ label:focus {
 	padding-right: 10px;
 }
 
+#custom-waybar-scrolling-mpris.empty,
 #taskbar.empty {
 	background: transparent;
 	border: transparent;
@@ -246,9 +237,13 @@ label:focus {
 	padding: 0px
 }
 
+#custom-media {
+	padding-left: 0px;
+}
+
 .modules-left {
-	margin-left: 4px;
+	margin-left: 6px;
 }
 .modules-right {
-	margin-right: 4px;
+	margin-right: 6px;
 }
