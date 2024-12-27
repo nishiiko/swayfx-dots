@@ -11,7 +11,8 @@ swayfx (duh)\
 swww\
 dunst\
 kitty\
-rofi\
+rofi wayland fork\
+grim\
 swappy\
 swaylock\
 waybar
