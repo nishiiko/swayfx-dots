@@ -13,6 +13,7 @@ dunst\
 kitty\
 rofi wayland fork\
 grim\
+slurp\
 swappy\
 swaylock\
 waybar
