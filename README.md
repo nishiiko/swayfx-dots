@@ -8,6 +8,7 @@ openrc
 
 ## things you need (maybe):
 swayfx (duh)\
+swww\
 dunst\
 kitty\
 rofi\
