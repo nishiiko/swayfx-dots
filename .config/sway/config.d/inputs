@@ -1,0 +1,18 @@
+input "type:keyboard" {
+	xkb_layout gb,gb(colemak_dh)
+	xkb_options grp:win_space_toggle
+}
+
+input "type:pointer" {
+	accel_profile flat
+}
+
+input "type:touchpad" {
+	natural_scroll enabled 
+	accel_profile flat
+	pointer_accel 0.4 
+	scroll_factor 0.1
+	tap_button_map lrm
+	dwt disabled 
+	tap enabled 
+}

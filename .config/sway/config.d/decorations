@@ -1,0 +1,40 @@
+seat seat0 xcursor_theme okayuXcur 32 
+
+font pango:UbuntuMono Nerd Font 14
+
+titlebar_separator disable
+titlebar_padding 8
+
+gaps inner 15
+
+blur enable
+
+blur_passes 3
+blur_radius 8
+
+default_border normal 4
+default_floating_border normal 4
+
+set $focused #FDBDFFFF
+set $unfocused #3D5D96DD
+set $textfocused #000000FF
+set $textunfocused #FFFFFFFF
+
+client.focused $focused $focused $textfocused $focused $focused
+client.focused_inactive $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.focused_tab_title $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.unfocused $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.background $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.urgent $unfocused $unfocused $textunfocused $unfocused $unfocused
+
+corner_radius 16
+
+shadows enable
+shadow_color #000000BB
+shadow_blur_radius 16
+shadow_offset 10 10
+
+layer_effects waybar blur enable; blur_ignore_transparent enable
+layer_effects rofi blur enable; blur_ignore_transparent enable
+layer_effects swaync-control-center blur enable; blur_ignore_transparent enable
+layer_effects swaync-notification-window blur enable; blur_ignore_transparent enable

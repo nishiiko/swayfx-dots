@@ -1,0 +1,40 @@
+for_window [class=".*"] border normal 4 
+for_window [app_id=".*"] border normal 4
+
+for_window [class=".*"] allow_tearing yes
+for_window [app_id=".*"] allow_tearing yes
+
+for_window [class="^(?!.*Spotify).*$"] focus
+
+assign [app_id="zen"] workspace 1
+assign [app_id="(?i).*cord"] workspace 2
+assign [class="(?i).*cord"] workspace 2
+assign [class="steam"] workspace 3
+assign [app_id="foot"] workspace 4
+assign [app_id="pcmanfm"] workspace 5
+assign [class="Spotify"] workspace 9
+assign [app_id="com.obsproject.Studio"] workspace 10
+
+# floats from gentoo wiki
+
+for_window [window_role = "pop-up"] floating enable
+for_window [window_role = "bubble"] floating enable
+for_window [window_role = "dialog"] floating enable
+for_window [window_type = "dialog"] floating enable
+for_window [window_role = "task_dialog"] floating enable
+for_window [window_type = "menu"] floating enable
+for_window [app_id = "floating"] floating enable
+for_window [app_id = "floating_update"] floating enable, resize set width 1000px height 600px
+for_window [class = "(?i)pinentry"] floating enable
+for_window [title = "Administrator privileges required"] floating enable
+
+for_window [title = "(?i).*Bitwarden Password Manager.*"] floating enable
+for_window [title = "About Zen Browser"] floating enable
+for_window [window_role = "About"] floating enable
+for_window [app_id="org.twosheds.iwgtk"] floating enable
+for_window [app_id="iwgtk"] floating enable
+
+for_window [class="^steam$" title="^(?!.*Steam).*$"] floating enable
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
+
+for_window [shell="xwayland"] title_format %title "[Xwayland]"
