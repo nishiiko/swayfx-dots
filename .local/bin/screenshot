@@ -1,0 +1,58 @@
+#!/bin/bash
+filename=$HOME/Pictures/Screenshots/$(date +'Screenshot_%Y-%m-%d_%H-%M-%S.png')
+lockpath=$HOME/.screenshotLock 
+
+if [ -f $lockpath ]; then
+    exit
+fi
+
+echo "if youre reading this, just delete this file" > $lockpath
+
+case $1 in
+    --region)
+        hyprpicker -r -z &
+        sleep 0.1
+        HYPRPICKER_PID=$!
+	
+        grim -l 0 -g "$(slurp -d -c ffffffff -b 000000bb -w 3)" - | magick - -shave 4x4 PNG:$filename
+        kill $HYPRPICKER_PID
+	    
+	    if [ ! -f "$filename" ]; then
+            rm -f $lockpath
+	    	exit
+	    fi
+	    
+	    $(notify-send "Region screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
+        ;;
+
+    --display)
+        grim -l 0 -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" $filename
+	    $(notify-send "Monitor screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
+        ;;
+
+    --all)  
+        grim -l 0 $filename
+	    $(notify-send "Desktop screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &  
+        ;;
+
+    *)
+        echo "
+    Flags:
+        
+        --region (Screenshots a selected region)
+        --display (Screenshots current active monitor)
+        --all (Screenshots all monitors/entire desktop)
+        
+    why are you using this in your terminal anyways
+    	"
+        notify-send "Screenshot Error" "Flags written incorrectly"
+        rm -f $lockpath 
+        exit
+    ;;
+esac
+
+paplay $HOME/.config/swaync/ding.wav --volume=35000 &
+wl-copy < $filename &
+rm -f $lockpath
+
+killall -e hyprpicker
