@@ -21,5 +21,6 @@ slurp\
 imagemagick\
 hyprpicker (freeze screen)
 
-![alt text](screenshot.png)
+![screenshot of desktop](screenshot.png)
+![screenshot with three terminals open](screenshot2.png)
 
