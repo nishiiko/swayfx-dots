@@ -7,6 +7,11 @@ i dont recommend you actually use this, i made this
 for myself where i intend to always nuke my previous config files
 please backup your current dots first
 
+i highly advise you edit .config/sway/config.d/monitors before
+using the install script, otherwise you may be left with a black
+screen if my configs do not match exactly what your monitor(s) can
+handle
+
 are you sure you want to run this (y/n): " confirm
 
 if [ $confirm == "y" ]; then
