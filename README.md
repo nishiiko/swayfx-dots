@@ -9,14 +9,17 @@ openrc
 ## things you need (maybe):
 swayfx (duh)\
 swww\
-dunst\
-kitty\
+swaync\
+foot\
 rofi wayland fork\
-grim\
-slurp\
-swappy\
 swaylock\
 waybar
+
+# stuff needed for the screenshot script
+grim\
+slurp\
+imagemagick\
+hyprpicker (freeze screen)
 
 ![alt text](screenshot.png)
 
