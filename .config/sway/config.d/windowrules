@@ -7,12 +7,17 @@ for_window [app_id=".*"] allow_tearing yes
 for_window [class="^(?!.*Spotify).*$"] focus
 
 assign [app_id="zen"] workspace 1
+
 assign [app_id="(?i).*cord"] workspace 2
 assign [class="(?i).*cord"] workspace 2
+
 assign [class="steam"] workspace 3
+
 assign [app_id="foot"] workspace 4
-assign [app_id="pcmanfm"] workspace 5
+
 assign [class="Spotify"] workspace 9
+
+assign [class="obs"] workspace 10
 assign [app_id="com.obsproject.Studio"] workspace 10
 
 # floats from gentoo wiki
