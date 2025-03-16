@@ -12,7 +12,7 @@ swww\
 swaync\
 foot\
 rofi wayland fork\
-swaylock\
+hyprlock\
 waybar
 
 # stuff needed for the screenshot script
