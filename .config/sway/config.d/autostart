@@ -1,4 +1,6 @@
-exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
+#exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
+exec dbus-update-activataion-environment --all
+exec brightnessctl --restore
 exec rm $HOME/.screenshotLock
 exec qpwgraph -m &
 exec swww-daemon &

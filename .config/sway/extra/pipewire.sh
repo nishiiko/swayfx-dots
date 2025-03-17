@@ -4,4 +4,4 @@ pipewire &
 pipewire-pulse &
 wireplumber &
 
-# paplay --volume=65535 $HOME/.config/sway/extra/startup.wav &
+paplay --volume=65535 $HOME/.config/sway/extra/startup.wav &

@@ -1,6 +1,3 @@
-for_window [class=".*"] border normal 4 
-for_window [app_id=".*"] border normal 4
-
 for_window [class=".*"] allow_tearing yes
 for_window [app_id=".*"] allow_tearing yes
 
@@ -19,6 +16,8 @@ assign [class="Spotify"] workspace 9
 
 assign [class="obs"] workspace 10
 assign [app_id="com.obsproject.Studio"] workspace 10
+
+for_window [app_id="pcmanfm"] floating enable
 
 # floats from gentoo wiki
 
@@ -41,5 +40,7 @@ for_window [app_id="iwgtk"] floating enable
 
 for_window [class="^steam$" title="^(?!.*Steam).*$"] floating enable
 for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
+
+for_window [app_id="blueman-manager"] floating enable
 
 for_window [shell="xwayland"] title_format %title "[Xwayland]"

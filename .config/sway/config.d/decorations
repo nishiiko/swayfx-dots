@@ -15,6 +15,9 @@ blur_radius 8
 default_border normal 4
 default_floating_border normal 4
 
+for_window [class=".*"] border normal 4
+for_window [app_id=".*"] border normal 4
+
 set $focused #FDBDFFFF
 set $unfocused #3D5D96DD
 set $textfocused #000000FF

@@ -10,7 +10,7 @@ input "type:pointer" {
 input "type:touchpad" {
 	natural_scroll enabled 
 	accel_profile flat
-	pointer_accel 0.4 
+	pointer_accel 0.4
 	scroll_factor 0.1
 	tap_button_map lrm
 	dwt disabled 
