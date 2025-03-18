@@ -19,6 +19,7 @@ waybar
 grim\
 slurp\
 imagemagick\
+wl-clipboard\
 hyprpicker (freeze screen)
 
 ![screenshot of desktop](screenshot.png)
