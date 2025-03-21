@@ -30,7 +30,7 @@ case $1 in
         ;;
 
     --display)
-        grim -l 1 -o "$(hyprctl activeworkspace -j | jq -r '.monitor')" $filename
+        grim -l 1 -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" $filename
 	    $(notify-send "Monitor screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
         ;;
 
