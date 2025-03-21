@@ -9,19 +9,18 @@ gaps inner 15
 
 blur enable
 
-blur_passes 3
-blur_radius 8
+blur_passes 4
+blur_radius 4
 
 default_border normal 4
 default_floating_border normal 4
 
-for_window [class=".*"] border normal 4
-for_window [app_id=".*"] border normal 4
+title_align center
 
 set $focused #FDBDFFFF
-set $unfocused #3D5D96DD
+set $unfocused #9D6D9FEE
 set $textfocused #000000FF
-set $textunfocused #FFFFFFFF
+set $textunfocused #111111FF
 
 client.focused $focused $focused $textfocused $focused $focused
 client.focused_inactive $unfocused $unfocused $textunfocused $unfocused $unfocused
@@ -33,9 +32,11 @@ client.urgent $unfocused $unfocused $textunfocused $unfocused $unfocused
 corner_radius 16
 
 shadows enable
-shadow_color #000000BB
-shadow_blur_radius 16
+shadow_color #1A1A1ABB
+shadow_blur_radius 5
 shadow_offset 10 10
+
+default_dim_inactive 0.2
 
 layer_effects waybar blur enable; blur_ignore_transparent enable
 layer_effects rofi blur enable; blur_ignore_transparent enable

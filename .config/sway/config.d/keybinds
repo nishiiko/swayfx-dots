@@ -1,23 +1,40 @@
 set $mod Mod4
 set $term foot 
+set $filemanager pcmanfm
 set $menu rofi -show drun -no-sort -disable-history
 
+bindsym $mod+p exec hyprpicker --autocopy
 bindsym $mod+n exec swaync-client -t
-
-bindsym $mod+e exec pcmanfm
-
-bindsym $mod+l exec hyprlock
 bindsym $mod+c exec vscode
+bindsym $mod+l exec hyprlock
+
+bindsym $mod+Shift+c reload
 
 bindsym $mod+Shift+s exec $HOME/.local/bin/screenshot --region
 bindsym $mod+Print exec $HOME/.local/bin/screenshot --display
 bindsym Print exec $HOME/.local/bin/screenshot --all 
 
-bindsym $mod+Shift+c reload
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%- -e -s
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+ -e -s
+
+bindsym --locked XF86AudioRaiseVolume exec amixer set Master 5%+
+bindsym --locked XF86AudioLowerVolume exec amixer set Master 5%-
+bindsym --locked XF86AudioMute exec amixer set Master toggle 
 
 bindsym $mod+t exec $term
-bindsym $mod+q kill
 bindsym $mod+d exec $menu
+bindsym $mod+e exec $filemanager
+bindsym $mod+q kill
+bindsym $mod+w floating toggle
+bindsym $mod+Return fullscreen
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+floating_modifier $mod normal
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -50,23 +67,6 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
-
-bindsym $mod+b splith
-bindsym $mod+v splitv
-
-bindsym $mod+w floating toggle
-bindsym $mod+Return fullscreen
-
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
-
-floating_modifier $mod normal
-
-bindsym --locked XF86AudioMute exec amixer set Master toggle 
-bindsym --locked XF86AudioLowerVolume exec amixer set Master 5%-
-bindsym --locked XF86AudioRaiseVolume exec amixer set Master 5%+
-bindsym --locked XF86MonBrightnessDown exec brightnessctl -e set 5%- -s
-bindsym --locked XF86MonBrightnessUp exec brightnessctl -e set 5%+ -s
 
 mode "resize" {
     bindsym Left resize shrink width 10px

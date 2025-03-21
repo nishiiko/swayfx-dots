@@ -1,13 +1,12 @@
-#exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
 exec dbus-update-activataion-environment --all
-exec brightnessctl --restore
 exec rm $HOME/.screenshotLock
-exec qpwgraph -m &
+exec $HOME/.config/sway/extra/pipewire.sh &
 exec swww-daemon &
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3 &
-exec $HOME/.config/sway/extra/pipewire.sh &
-exec $HOME/.config/sway/extra/xdpw.sh &
-exec waybar &
-exec swaync &
 exec /usr/libexec/polkit-gnome-authentication-agent-1 &
+exec $HOME/.config/sway/extra/xdpw.sh &
 exec otd-daemon &
+exec qpwgraph -m &
+exec swaync &
+exec brightnessctl --restore
+exec waybar &
