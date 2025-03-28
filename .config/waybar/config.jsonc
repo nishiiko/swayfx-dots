@@ -13,7 +13,7 @@
 		"network"
 	],
     "modules-center": [
-        "sway/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-right": [
 		"tray",
@@ -23,7 +23,7 @@
         "clock"
     ],
     
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
             "1": "一",
