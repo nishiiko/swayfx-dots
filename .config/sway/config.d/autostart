@@ -1,12 +1,12 @@
-exec dbus-update-activataion-environment --all
-exec rm $HOME/.screenshotLock
+exec dbus-update-activataion-environment --all &
 exec $HOME/.config/sway/extra/pipewire.sh &
+exec $HOME/.config/sway/extra/xdpw.sh &
 exec swww-daemon &
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3 &
-exec /usr/libexec/polkit-gnome-authentication-agent-1 &
-exec $HOME/.config/sway/extra/xdpw.sh &
-exec otd-daemon &
-exec qpwgraph -m &
-exec swaync &
-exec brightnessctl --restore
 exec waybar &
+exec /usr/libexec/polkit-gnome-authentication-agent-1 &
+exec rm $HOME/.screenshotLock &
+exec swaync &
+exec qpwgraph -m &
+exec otd-daemon &
+exec foot --server

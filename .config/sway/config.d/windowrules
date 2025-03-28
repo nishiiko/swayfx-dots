@@ -9,6 +9,7 @@ for_window [class="^(?!.*Spotify).*$"] focus
 assign [app_id="zen"] workspace 1
 assign [app_id="(?i).*cord"] workspace 2
 assign [class="(?i).*cord"] workspace 2
+assign [class="vesktop"] workspace 2
 assign [class="steam"] workspace 3
 assign [app_id="foot"] workspace 4
 assign [class="Spotify"] workspace 9
