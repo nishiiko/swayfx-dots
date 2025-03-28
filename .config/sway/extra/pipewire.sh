@@ -1,9 +1,13 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
-killall pipewire pipewire-pulse wireplumber ;
+if ! echo $(ls -l /sbin/init) | grep systemd; then
+    killall wireplumber pipewire-pulse pipewire
 
-pipewire &
-pipewire-pulse &
-wireplumber &
+    pipewire &
+    pipewire-pulse &
 
-# paplay --volume=65535 $HOME/.config/hypr/extra/startup.wav &
+    sleep 1s
+    wireplumber &
+fi
+
+paplay --volume=65535 $HOME/.config/hypr/extra/heal.wav &
