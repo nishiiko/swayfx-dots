@@ -1,5 +1,4 @@
 for_window [all] allow_tearing yes
-for_window [class="^(?!.*Spotify).*$"] focus
 
 assign [app_id="zen"] workspace 1
 assign [app_id="(?i).*cord"] workspace 2
