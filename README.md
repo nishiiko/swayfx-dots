@@ -14,7 +14,7 @@ foot\
 rofi wayland fork\
 hyprlock\
 waybar\
-[autotile](https://github.com/nwg-piotr/autotiling/tree/master)
+[autotile](https://github.com/nwg-piotr/autotiling/tree/master)\
 [i3ipc](https://github.com/altdesktop/i3ipc-python)
 
 # stuff needed for the screenshot script
