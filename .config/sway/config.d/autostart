@@ -2,7 +2,7 @@ exec dbus-update-activataion-environment --all
 exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
-exec $HOME/.config/sway/extra/scripts/inactive-windows-transparency.py -o 0.85 --focused 0.95
+exec python $HOME/.config/sway/extra/scripts/inactive-windows-transparency.py -o 0.85 --focused 0.95
 exec autotiling -l 2
 exec swww-daemon
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
