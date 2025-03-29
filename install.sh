@@ -30,7 +30,6 @@ if [ $confirm == "y" ]; then
     done
     chmod +x .config/sway/extra/scripts/pipewire.sh
     chmod +x .config/sway/extra/scripts/xdpw.sh
-    chmod +x .config/sway/extra/scripts/opacity.sh
     chmod +x .config/sway/extra/scripts/floating.sh
     chmod +x .local/bin/screenshot
 
