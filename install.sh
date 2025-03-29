@@ -28,8 +28,10 @@ if [ $confirm == "y" ]; then
         sleep 1
         : $((countdown--))
     done
-    chmod +x .config/sway/extra/pipewire.sh
-    chmod +x .config/sway/extra/xdpw.sh
+    chmod +x .config/sway/extra/scripts/pipewire.sh
+    chmod +x .config/sway/extra/scripts/xdpw.sh
+    chmod +x .config/sway/extra/scripts/opacity.sh
+    chmod +x .config/sway/extra/scripts/floating.sh
     chmod +x .local/bin/screenshot
 
     cp -v .config/* -r $HOME/.config
