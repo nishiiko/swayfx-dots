@@ -9,4 +9,11 @@ while true; do
 	if [[ "$floatingState" == '"floating_con"' ]]; then
 		swaymsg [con_id = $windowID] border pixel 4
 	fi
+
+    if pgrep sway &>/dev/null;
+        continue
+    else
+        exit
+    fi
+
 done
