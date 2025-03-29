@@ -83,3 +83,5 @@ bindsym --to-code $mod+r mode "resize"
 # bindsym --to-code $mod+s layout stacking
 # bindsym --to-code $mod+w layout tabbed
 # bindsym --to-code $mod+e layout toggle split
+
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
