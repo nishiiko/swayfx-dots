@@ -13,7 +13,9 @@ swaync\
 foot\
 rofi wayland fork\
 hyprlock\
-waybar
+waybar\
+[autotile](https://github.com/nwg-piotr/autotiling/tree/master)
+[i3ipc](https://github.com/altdesktop/i3ipc-python)
 
 # stuff needed for the screenshot script
 grim\
