@@ -9,7 +9,7 @@ while true; do
 		continue
 	fi
 	if [[ $old -ne 0 ]]; then
-		swaymsg [con_id = $old] opacity set 0.8
+		swaymsg [con_id = $old] opacity set 0.85
 	fi
 	swaymsg [con_id = $new] opacity set 0.95
 	old=$new
