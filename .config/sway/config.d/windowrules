@@ -1,5 +1,4 @@
 for_window [all] allow_tearing yes
-for_window [class="^(?!.*Spotify).*$"] focus
 
 assign [app_id="zen"] workspace 1
 assign [app_id="(?i).*cord"] workspace 2
@@ -38,3 +37,5 @@ for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 
 for_window [shell="xwayland"] title_format %title "[Xwayland]"
+
+for_window [floating] border pixel 4

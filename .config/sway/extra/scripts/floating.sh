@@ -10,7 +10,7 @@ while true; do
 		swaymsg [con_id = $windowID] border pixel 4
 	fi
 
-    if pgrep sway &>/dev/null;
+    if pgrep sway &>/dev/null; then
         continue
     else
         exit
