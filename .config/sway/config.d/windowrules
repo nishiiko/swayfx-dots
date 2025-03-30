@@ -33,7 +33,7 @@ for_window [app_id="iwgtk"] floating enable
 
 for_window [class="^steam$" title="^(?!.*Steam).*$"] floating enable
 for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
-
+for_window [app_id="piper"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 
 for_window [shell="xwayland"] title_format %title "[Xwayland]"
