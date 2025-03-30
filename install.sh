@@ -28,6 +28,9 @@ if [ $confirm == "y" ]; then
         sleep 1
         : $((countdown--))
     done
+    
+    sed -i "s/nishi/$USER/g" config/swaync/config.json
+
     chmod +x .config/sway/extra/scripts/pipewire.sh
     chmod +x .config/sway/extra/scripts/xdpw.sh
     chmod +x .config/sway/extra/scripts/floating.sh
