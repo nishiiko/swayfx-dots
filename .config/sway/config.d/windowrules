@@ -37,5 +37,3 @@ for_window [app_id="piper"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 
 for_window [shell="xwayland"] title_format %title "[Xwayland]"
-
-for_window [floating] border pixel 4
