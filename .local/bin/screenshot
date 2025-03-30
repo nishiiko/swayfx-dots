@@ -19,6 +19,8 @@ case $1 in
         nohup >&/dev/null magick $tmpregion -shave 4x4 PNG:$filename &
         
         kill $HYPRPICKER_PID
+        
+        python $HOME/.config/sway/extra/scripts/inactive-windows-transparency.py --opacity 0.85 --focused 0.95 -g & disown &>/dev/null # python script breaks on region select, idk how to fix it :3
         wait
 
         if [ ! -f "$filename" ]; then
