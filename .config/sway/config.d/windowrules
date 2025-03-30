@@ -1,4 +1,4 @@
-for_window [all] allow_tearing yes
+# for_window [all] allow_tearing yes
 
 assign [app_id="zen"] workspace 1
 assign [app_id="(?i).*cord"] workspace 2
@@ -13,6 +13,7 @@ assign [app_id="com.obsproject.Studio"] workspace 10
 for_window [app_id="pcmanfm"] floating enable
 
 # floats from gentoo wiki
+for_window [class="^steam$" title="^(?!.*Steam).*$"] floating enable
 
 for_window [window_role = "pop-up"] floating enable
 for_window [window_role = "bubble"] floating enable
@@ -31,7 +32,6 @@ for_window [window_role = "About"] floating enable
 for_window [app_id="org.twosheds.iwgtk"] floating enable
 for_window [app_id="iwgtk"] floating enable
 
-for_window [class="^steam$" title="^(?!.*Steam).*$"] floating enable
 for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
 for_window [app_id="piper"] floating enable
 for_window [app_id="blueman-manager"] floating enable
