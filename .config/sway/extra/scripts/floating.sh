@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 while true; do
-    read -r windowID floatingState <<< $(swaymsg -t subscribe -m '["window"]' | jq '.. | select(.type?) | .id, .type' | tr '\n' ' ')
+    read -r windowID floatingState <<< $(swaymsg -t subscribe '["window"]' | jq '.. | select(.type?) | .id, .type' | tr '\n' ' ')
     if [[ $floatingState == '"con"' ]]; then
 		swaymsg [con_id = $windowID] border normal 4
     fi
