@@ -68,20 +68,4 @@ bindsym --to-code $mod+Shift+8 move container to workspace number 8
 bindsym --to-code $mod+Shift+9 move container to workspace number 9
 bindsym --to-code $mod+Shift+0 move container to workspace number 10
 
-mode "resize" {
-    bindsym --to-code Left resize shrink width 10px
-    bindsym --to-code Down resize grow height 10px
-    bindsym --to-code Up resize shrink height 10px
-    bindsym --to-code Right resize grow width 10px
-
-    # Return to default mode
-    bindsym --to-code Return mode "default"
-    bindsym --to-code Escape mode "default"
-}
-bindsym --to-code $mod+r mode "resize"
-
-# bindsym --to-code $mod+s layout stacking
-# bindsym --to-code $mod+w layout tabbed
-# bindsym --to-code $mod+e layout toggle split
-
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
