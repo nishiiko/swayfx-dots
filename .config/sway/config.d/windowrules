@@ -10,10 +10,9 @@ assign [class="Spotify"] workspace 9
 assign [class="obs"] workspace 10
 assign [app_id="com.obsproject.Studio"] workspace 10
 
-for_window [app_id="pcmanfm"] floating enable
-
-# floats from gentoo wiki
+# floats
 for_window [class="^steam$" title="^(?!.*Steam).*$"] floating enable
+for_window [app_id="pcmanfm"] floating enable
 
 for_window [window_role = "pop-up"] floating enable
 for_window [window_role = "bubble"] floating enable
