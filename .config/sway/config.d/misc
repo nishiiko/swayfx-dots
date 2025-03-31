@@ -1,2 +1,3 @@
+focus_follows_mouse always
 seat * hide_cursor 3000
 
