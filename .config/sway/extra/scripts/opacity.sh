@@ -4,7 +4,7 @@ old=0
 while read -r line; do
     read -r new visible focus <<< $(echo "$line" | jq '.. | select(.type?) | .id, .visible, .focused' | tr '\n' ' ')
 
-    if [[ $new -eq $old ]] | [[ ! $visible == 'true' ]] && [[ ! $focus == 'true' ]]; then
+    if [[ ! $visible == 'true' ]] && [[ ! $focus == 'true' ]]; then
         continue
     else	
 		swaymsg [con_id = $old] opacity set 0.75
