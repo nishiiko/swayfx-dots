@@ -31,11 +31,6 @@ if [ $confirm == "y" ]; then
     
     sed -i "s/nishi/$USER/g" config/swaync/config.json
 
-    chmod +x .config/sway/extra/scripts/pipewire.sh
-    chmod +x .config/sway/extra/scripts/xdpw.sh
-    chmod +x .config/sway/extra/scripts/floating.sh
-    chmod +x .local/bin/screenshot
-
     cp -v .config/* -r $HOME/.config
     cp -v .local/* -r $HOME/.local
     cp -v Pictures/* -r $HOME/Pictures
