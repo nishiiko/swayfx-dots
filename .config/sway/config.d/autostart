@@ -3,6 +3,7 @@ exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
 exec $HOME/.config/sway/extra/scripts/opacity.sh
+exec swaymsg workspace number 1
 exec autotiling
 exec swww-daemon
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
