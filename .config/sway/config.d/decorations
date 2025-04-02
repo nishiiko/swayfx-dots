@@ -9,8 +9,8 @@ gaps inner 15
 
 blur enable
 
-blur_passes 4
-blur_radius 6
+blur_passes 5
+blur_radius 3
 
 title_align center
 
