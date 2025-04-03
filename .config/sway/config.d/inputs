@@ -13,6 +13,6 @@ input "type:touchpad" {
     pointer_accel 0.6
     scroll_factor 0.1
     tap_button_map lrm
-    dwt disabled 
+    dwt enabled 
     tap enabled 
 }
