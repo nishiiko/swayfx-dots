@@ -32,8 +32,8 @@ client.urgent $unfocused $unfocused $textunfocused $unfocused $unfocused
 corner_radius 16
 
 shadows enable
-shadow_color #1A1A1ABB
-shadow_blur_radius 5
+shadow_color #1A1A1AAA
+shadow_blur_radius 7
 shadow_offset 10 10
 
 default_dim_inactive 0.15
