@@ -11,8 +11,8 @@ bindsym --to-code $mod+l exec hyprlock
 bindsym --to-code $mod+Shift+c reload
 
 bindsym --to-code $mod+Shift+s exec $HOME/.local/bin/screenshot --region
-bindsym --to-code $mod+Print exec $HOME/.local/bin/screenshot --display
-bindsym --to-code Print exec $HOME/.local/bin/screenshot --all 
+bindsym --to-code $mod+Print exec $HOME/.local/bin/screenshot --all
+bindsym --to-code Print exec $HOME/.local/bin/screenshot --display
 
 bindsym --to-code --locked XF86MonBrightnessDown exec brightnessctl set 5%- -e -s
 bindsym --to-code --locked XF86MonBrightnessUp exec brightnessctl set 5%+ -e -s

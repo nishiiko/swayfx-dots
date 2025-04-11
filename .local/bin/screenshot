@@ -2,6 +2,7 @@
 filename=$HOME/Pictures/Screenshots/$(date +'Screenshot_%Y-%m-%d_%H-%M-%S.png')
 lockpath=$HOME/.screenshotLock 
 tmpregion=$HOME/.tmpRegion
+monitor=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
 
 if [ -f $lockpath ]; then
     exit
@@ -29,17 +30,17 @@ case $1 in
             exit
         fi
 	    
-        $(notify-send "Region screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
+        $(notify-send "Region Screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
         ;;
 
     --display)
-        grim -l 1 -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" $filename
-	    $(notify-send "Monitor screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
+        grim -l 1 -o "$monitor" $filename
+	    $(notify-send "$monitor Screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
         ;;
 
     --all)  
         grim -l 1 $filename
-        $(notify-send "Desktop screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &  
+        $(notify-send "Desktop Screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &  
         ;;
 
     *)
