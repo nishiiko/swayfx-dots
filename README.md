@@ -10,7 +10,7 @@ openrc
 swayfx (duh)\
 swww\
 swaync\
-foot\
+alacritty\
 rofi wayland fork\
 hyprlock\
 waybar\
