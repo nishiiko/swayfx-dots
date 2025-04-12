@@ -1,4 +1,6 @@
 for_window [all] allow_tearing yes
+for_window [app_id=".*"] allow_tearing yes
+for_window [class=".*"] allow_tearing yes
 
 assign [app_id="^(zen)$"] workspace 1
 assign [app_id="^(discord)$"] workspace 2
