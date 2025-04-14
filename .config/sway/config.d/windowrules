@@ -8,6 +8,7 @@ assign [class="^(discord)$"] workspace 2
 assign [class="^(vesktop)$"] workspace 2
 assign [app_id="^(Alacritty)$"] workspace 3
 assign [class="^(steam)$"] workspace 4
+assign [class="^(steam_app_.*)$"] workspace 4
 assign [class="^(Spotify)$"] workspace 9
 assign [class="^(obs)$"] workspace 10
 assign [app_id="^(com.obsproject.Studio)$"] workspace 10
@@ -33,7 +34,7 @@ for_window [window_role = "About"] floating enable
 
 for_window [app_id="^(org.twosheds.iwgtk)$"] floating enable
 for_window [app_id="^(iwgtk)$"] floating enable
-
+for_window [app_id="^(io.missioncenter.MissionCenter)$"] floating enable
 for_window [app_id="^(org.pulseaudio.pavucontrol)$"] floating enable
 for_window [app_id="^(piper)$"] floating enable
 for_window [app_id="^(blueman-manager)$"] floating enable
