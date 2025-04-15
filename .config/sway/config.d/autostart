@@ -13,4 +13,3 @@ exec rm $HOME/.screenshotLock
 exec swaync
 exec qpwgraph -m
 exec otd-daemon
-exec alacritty --daemon 

@@ -1,5 +1,5 @@
 set $mod Mod4
-set $term alacritty msg create-window 
+set $term alacritty 
 set $filemanager nemo
 set $menu rofi -show drun -no-sort -disable-history
 
