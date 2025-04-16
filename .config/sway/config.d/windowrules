@@ -3,7 +3,8 @@ for_window [app_id=".*"] allow_tearing yes
 for_window [class=".*"] allow_tearing yes
 
 assign [app_id="^(zen)$"] workspace 1
-assign [app_id="^(goofcord)$"] workspace 2
+assign [app_id="^(goofcord|discord)$"] workspace 2
+assign [class="^(discord)$"] workspace 2
 assign [app_id="^(Alacritty)$"] workspace 3
 assign [class="^(steam)$"] workspace 4
 assign [class="^(steam_app_.*)$"] workspace 4
