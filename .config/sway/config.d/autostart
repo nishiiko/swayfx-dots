@@ -10,6 +10,7 @@ exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --trans
 exec waybar
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec rm $HOME/.screenshotLock
+exec rm $HOME/.tmpRegion
 exec swaync
 exec fcitx5
 exec otd-daemon

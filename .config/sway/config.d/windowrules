@@ -1,6 +1,5 @@
 for_window [all] allow_tearing yes
-for_window [app_id=".*"] allow_tearing yes
-for_window [class=".*"] allow_tearing yes
+for_window [all] opacity set 0.8
 
 assign [app_id="^(zen)$"] workspace 1
 assign [app_id="^(goofcord|discord)$"] workspace 2
