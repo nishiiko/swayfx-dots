@@ -4,7 +4,7 @@ for_window [all] opacity set 0.8
 assign [app_id="^(zen)$"] workspace 1
 assign [app_id="(?i).*cord"] workspace 2
 assign [class="(?i).*cord"] workspace 2
-assign [app_id="^(Alacritty)$"] workspace 3
+assign [app_id="^(foot|footclient)$"] workspace 3
 assign [class="^(steam)$"] workspace 4
 assign [class="^(steam_app_.*)$"] workspace 4
 assign [class="^(Spotify)$"] workspace 9
