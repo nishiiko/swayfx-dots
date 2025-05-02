@@ -1,5 +1,5 @@
 input "type:keyboard" {
-    xkb_layout gb,gb(colemak_dh)
+    xkb_layout gb(colemak_dh),gb
     xkb_options grp:win_space_toggle
 }
 
