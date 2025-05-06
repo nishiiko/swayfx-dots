@@ -3,6 +3,8 @@ set $term foot
 set $filemanager nemo
 set $menu rofi -show drun -no-sort -disable-history
 
+bindsym --to-code Control+Shift+Alt+l exec fcitx5-remote -t
+
 bindsym --to-code $mod+p exec hyprpicker --autocopy
 bindsym --to-code $mod+n exec swaync-client -t
 bindsym --to-code $mod+l exec hyprlock
