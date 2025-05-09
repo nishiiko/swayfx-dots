@@ -1,2 +1,3 @@
+floating_maximum_size -1 x -1
 focus_follows_mouse always
 seat * hide_cursor 3000
