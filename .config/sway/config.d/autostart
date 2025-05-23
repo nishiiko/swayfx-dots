@@ -1,8 +1,8 @@
 exec dbus-update-activataion-environment --all
 exec $HOME/.config/sway/extra/scripts/pipewire.sh
-exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
 exec $HOME/.config/sway/extra/scripts/opacity.sh
+exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec swaymsg workspace number 1
 exec autotiling
 exec swww-daemon
