@@ -1,7 +1,7 @@
 set $mod Mod4
 set $term foot 
 set $filemanager nemo
-set $menu fuzzel 
+set $menu rofi -show drun
 
 bindsym --to-code Control+Shift+Alt+l exec fcitx5-remote -t
 
@@ -26,7 +26,6 @@ bindsym --to-code --locked XF86AudioMute exec amixer set Master toggle
 
 bindsym --to-code $mod+t exec $term
 bindsym --to-code $mod+s exec $menu
-bindsym --to-code $mod+Period exec fuzzel-emoji
 bindsym --to-code $mod+f exec $filemanager
 bindsym --to-code $mod+q kill
 bindsym --to-code $mod+w floating toggle
