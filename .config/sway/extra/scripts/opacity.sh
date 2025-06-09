@@ -10,7 +10,7 @@ while read -r line; do
     if [[ $old -eq $new ]] || [[ ! $visible == 'true' ]] || [[ ! $focus == true ]]; then
         continue
     else	
-		swaymsg [con_id = $old] opacity set 0.8
+		swaymsg [con_id = $old] opacity set 0.75
 	fi
     
     swaymsg [con_id = $new] opacity set 0.9
