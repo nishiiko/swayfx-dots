@@ -46,10 +46,10 @@ layer_effects "waybar" {
     blur_ignore_transparent enable
 }
 
-layer_effects "rofi" {
+layer_effects "launcher" {
     blur enable;
     blur_ignore_transparent enable;
-    corner_radius 34;
+    corner_radius 25;
     shadows enable
 }
 

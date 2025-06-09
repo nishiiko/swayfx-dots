@@ -11,7 +11,7 @@ swayfx (duh)\
 swww\
 swaync\
 foot\
-rofi wayland fork\
+fuzzel\
 hyprlock\
 waybar\
 [autotile](https://github.com/nwg-piotr/autotiling/tree/master)\
