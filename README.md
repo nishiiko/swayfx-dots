@@ -18,11 +18,12 @@ waybar\
 [i3ipc](https://github.com/altdesktop/i3ipc-python)
 
 # stuff needed for the screenshot script
+jq\
 grim\
 slurp\
+swaymsg\
 imagemagick\
 wl-clipboard\
-swaymsg\
 hyprpicker (freeze screen)
 
 ![screenshot of desktop](screenshot.png)
