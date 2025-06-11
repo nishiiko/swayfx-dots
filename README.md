@@ -22,6 +22,7 @@ grim\
 slurp\
 imagemagick\
 wl-clipboard\
+swaymsg\
 hyprpicker (freeze screen)
 
 ![screenshot of desktop](screenshot.png)
