@@ -1,14 +1,13 @@
 exec dbus-update-activataion-environment --all
 exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
-exec $HOME/.config/sway/extra/scripts/opacity.sh
+exec $HOME/.config/sway/extra/scripts/opacity.sh 0.8 1
 exec $HOME/.config/sway/extra/scripts/xdpw.sh
-exec swaymsg workspace number 1
 exec autotiling
 exec swww-daemon
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
 exec waybar
-exec /usr/libexec/polkit-gnome-authentication-agent-1
+exec /usr/lib*/polkit-gnome-authentication-agent-1
 exec rm $HOME/.screenshotLock
 exec rm $HOME/.tmpRegion
 exec swaync
