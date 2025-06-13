@@ -23,7 +23,7 @@ case $1 in
 
         area=$(slurp -d -c ffffffff -b 00000088 -w 3)
         killall hyprpicker &>/dev/null
-        
+ 
         if [ ! -z "$area" ]; then
             grim -l 1 -g "$area" $tmpregion 
             magick $tmpregion -shave 4x4 PNG:$filename
@@ -43,11 +43,11 @@ case $1 in
     *)
         echo "
     Flags:
-        
+
         --region (Screenshots a selected region)
         --display (Screenshots current active monitor)
         --all (Screenshots all monitors/entire desktop)
-        
+
     why are you using this in your terminal anyways
         "
         notify-send "Screenshot Error" "Flag written incorrectly"
