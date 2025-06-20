@@ -7,7 +7,7 @@ exec autotiling
 exec swww-daemon
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
 exec waybar
-exec /usr/lib*/polkit-gnome-authentication-agent-1
+exec /usr/lib*/polkit-mate-authentication-agent-1
 exec rm $HOME/.screenshotLock
 exec rm $HOME/.tmpRegion
 exec swaync
