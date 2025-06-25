@@ -6,7 +6,7 @@ set $menu rofi -show drun
 bindsym --to-code Control+Shift+Alt+l exec fcitx5-remote -t
 
 bindsym --to-code $mod+h exec hyprpicker --autocopy
-bindsym --to-code $mod+n exec swaync-client -t
+bindsym --to-code $mod+k exec swaync-client -t
 bindsym --to-code $mod+l exec hyprlock
 
 bindsym --to-code $mod+Shift+c reload
