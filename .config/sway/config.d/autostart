@@ -3,7 +3,7 @@ exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
 exec $HOME/.config/sway/extra/scripts/opacity.sh 0.9 1
 exec $HOME/.config/sway/extra/scripts/xdpw.sh
-exec autotiling-rs
+exec $HOME/.local/bin/autotiling-rs
 exec swww-daemon
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
 exec waybar
