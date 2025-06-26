@@ -13,9 +13,7 @@ swaync\
 foot\
 rofi\
 hyprlock\
-waybar\
-[autotile](https://github.com/nwg-piotr/autotiling/tree/master)\
-[i3ipc](https://github.com/altdesktop/i3ipc-python)
+waybar
 
 # stuff needed for the screenshot script
 jq\
