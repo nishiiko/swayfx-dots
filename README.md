@@ -13,7 +13,8 @@ swaync\
 foot\
 rofi\
 hyprlock\
-waybar
+waybar\
+[autotiling-rs](https://github.com/ammgws/autotiling-rs)
 
 # stuff needed for the screenshot script
 jq\
