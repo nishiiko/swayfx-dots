@@ -22,12 +22,12 @@ case $1 in
         fi
 
         area=$(slurp -d -c ffffffff -b 00000088 -w 3)
-        killall hyprpicker &>/dev/null
- 
+
         if [ ! -z "$area" ]; then
             grim -l 1 -g "$area" $tmpregion 
             magick $tmpregion -shave 4x4 PNG:$filename
         fi
+        killall hyprpicker slurp &>/dev/null
         ;;
 
     --display)
