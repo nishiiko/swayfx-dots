@@ -11,7 +11,7 @@ input "type:touchpad" {
     natural_scroll enabled 
     accel_profile flat
     pointer_accel 0.6
-    scroll_factor 0.1
+    scroll_factor 0.5
     tap_button_map lrm
     drag_lock disabled
     dwt enabled 
