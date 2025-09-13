@@ -12,4 +12,6 @@ if ! grep -r systemd /sbin/init; then
     wireplumber &
 fi
 
+sleep 0.5s
+
 paplay --volume=65535 $HOME/.config/sway/extra/assets/heal.wav &
