@@ -15,16 +15,17 @@ case $1 in
     --region)
         type="Region"
 
-        if which hyprpicker > /dev/null; then
+        if command -v hyprpicker > /dev/null; then
             until pgrep -x "hyprpicker" > /dev/null; do
                 hyprpicker -r -z &
+                sleep 0.1
             done
         fi
 
         area=$(slurp -d -c ffffffff -b 00000088 -w 3)
 
         if [ ! -z "$area" ]; then
-            grim -l 1 -g "$area" $tmpregion
+            grim -l 1 -g "$area" $tmpregion 
             magick $tmpregion -shave 4x4 PNG:$filename
         fi
         killall hyprpicker slurp &>/dev/null
@@ -60,7 +61,7 @@ rm -f $tmpregion
 if [ -f "$filename" ]; then
     wl-copy < $filename &
     $(notify-send "$type Screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
-    paplay $HOME/.config/swaync/ding.wav --volume=65535 &
+    paplay $HOME/.config/swaync/se_elevator_ding.ogg --volume=65535 &
 fi
 
 exit
