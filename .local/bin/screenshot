@@ -18,7 +18,6 @@ case $1 in
         if command -v hyprpicker > /dev/null; then
             until pgrep -x "hyprpicker" > /dev/null; do
                 hyprpicker -r -z &
-                sleep 0.1
             done
         fi
 
