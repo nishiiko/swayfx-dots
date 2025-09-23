@@ -15,6 +15,19 @@ if command -v hyprpicker > /dev/null; then
 fi
 }
 
+slorp () {
+time1=$(date +%s%3N)
+until [ ! -z "$area" ]; do
+    area=$(slurp -d -c ffffffff -b 00000088 -s 44444488 -w 3)
+    time2=$(date +%s%3N)
+    elapsed=$(($time2-$time1))
+    if [[ $elapsed -gt 200 ]]; then
+        break
+    fi
+    time1=$time2
+done
+}
+
 if mkdir $lockdir 2>/dev/null && touch $lockpath 2>/dev/null; then
 trap 'rm -rf $lockdir & killall hyprpicker' EXIT
 
@@ -22,34 +35,23 @@ case $1 in
     --region)
         type="Region"
         freezeGuarantee
-
-        time1=$(date +%s%3N)
-        until [ ! -z "$area" ]; do
-            area=$(slurp -d -c ffffffff -b 00000088 -s 44444488 -w 3)
-            time2=$(date +%s%3N)
-            elapsed=$(($time2-$time1))
-            if [[ $elapsed -gt 200 ]]; then
-                break
-            fi
-            time1=$time2
-        done
-        
+        slorp
         if [ ! -z "$area" ]; then
             grim -l 1 -g "$area" $tmpregion 
             magick $tmpregion -shave 4x4 PNG:$filename
         fi
         killall hyprpicker slurp &>/dev/null
-        ;;
+    ;;
 
     --display)
         type="$monitor"
         grim -l 1 -o "$monitor" $filename
-        ;;
+    ;;
 
     --all)
         type="Desktop"
         grim -l 1 $filename
-        ;;
+    ;;
 
     *)
         echo "
