@@ -21,7 +21,7 @@ until [ ! -z "$area" ]; do
     area=$(slurp -d -c ffffffff -b 00000088 -s 44444488 -w 3)
     time2=$(date +%s%3N)
     elapsed=$(($time2-$time1))
-    if [[ $elapsed -gt 200 ]]; then
+    if [[ $elapsed -gt 250 ]]; then
         break
     fi
     time1=$time2
