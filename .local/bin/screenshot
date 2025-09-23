@@ -25,7 +25,7 @@ case $1 in
 
         time1=$(date +%s%3N)
         until [ ! -z "$area" ]; do
-            area=$(slurp -d -c ffffffff -b 00000000 -w 3)
+            area=$(slurp -d -c ffffffff -b 00000000 -s 88888888 -w 3)
             time2=$(date +%s%3N)
             elapsed=$(($time2-$time1))
             if [[ $elapsed -gt 200 ]]; then
