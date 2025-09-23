@@ -13,6 +13,7 @@ bindsym --to-code $mod+Shift+c reload
 
 bindsym --to-code $mod+F2 exec $HOME/.config/sway/extra/scripts/dwt.sh
 
+bindsym --to-code $mod+Shift+r exec $HOME/.local/bin/screenshot --region # my laptop screenshot button needs this binding
 bindsym --to-code $mod+Shift+s exec $HOME/.local/bin/screenshot --region
 bindsym --to-code $mod+Print exec $HOME/.local/bin/screenshot --all
 bindsym --to-code Print exec $HOME/.local/bin/screenshot --display
