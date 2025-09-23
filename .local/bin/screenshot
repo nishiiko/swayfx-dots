@@ -29,7 +29,7 @@ done
 }
 
 if mkdir $lockdir 2>/dev/null && touch $lockpath 2>/dev/null; then
-trap 'rm -rf $lockdir & killall hyprpicker' EXIT
+trap 'rm -rf $lockdir & killall hyprpicker 2>/dev/null' EXIT
 
 case $1 in
     --region)
@@ -40,7 +40,6 @@ case $1 in
             grim -l 1 -g "$area" $tmpregion 
             magick $tmpregion -shave 4x4 PNG:$filename
         fi
-        killall hyprpicker slurp &>/dev/null
     ;;
 
     --display)
