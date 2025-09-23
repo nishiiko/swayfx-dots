@@ -1,28 +1,39 @@
 #!/usr/bin/env bash
 filename=$HOME/Pictures/Screenshots/$(date +'Screenshot_%Y-%m-%d_%H-%M-%S.png')
-lockpath=$HOME/.screenshotLock 
-tmpregion=$HOME/.tmpRegion
+lockdir=/var/tmp/swayScreenshot
+lockpath=/var/tmp/swayScreenshot/lockfile
+tmpregion=/var/tmp/swayScreenshot/tmpRegion
 monitor=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
 
-if [ -f $lockpath ]; then
-    echo "$lockpath found, remove this file"
-    exit
+freezeGuarantee() { #i hope its guaranteed at least
+if command -v hyprpicker > /dev/null; then
+    hyprpicker -r -n -z -q &
+    false
+    until [ $? -eq 0 ]; do
+        swaymsg -r -t get_outputs | jq '.[0].layer_shell_surfaces | .[] | .namespace' | grep hyprpicker &>/dev/null
+    done
 fi
+}
 
-echo "if youre reading this, just delete this file" > $lockpath
+if mkdir $lockdir 2>/dev/null && touch $lockpath 2>/dev/null; then
+trap 'rm -rf $lockdir' EXIT
 
 case $1 in
     --region)
         type="Region"
+        freezeGuarantee
 
-        if command -v hyprpicker > /dev/null; then
-            until pgrep -x "hyprpicker" > /dev/null; do
-                hyprpicker -r -z &
-            done
-        fi
-
-        area=$(slurp -d -c ffffffff -b 00000088 -w 3)
-
+        time1=$(date +%s%3N)
+        until [ ! -z "$area" ]; do
+            area=$(slurp -d -c ffffffff -b 00000000 -w 3)
+            time2=$(date +%s%3N)
+            elapsed=$(($time2-$time1))
+            if [[ $elapsed -gt 200 ]]; then
+                break
+            fi
+            time1=$time2
+        done
+        
         if [ ! -z "$area" ]; then
             grim -l 1 -g "$area" $tmpregion 
             magick $tmpregion -shave 4x4 PNG:$filename
@@ -54,8 +65,9 @@ case $1 in
     ;;
 esac
 
-rm -f $lockpath
-rm -f $tmpregion
+else
+    echo "Remove $lockdir directory"
+fi
 
 if [ -f "$filename" ]; then
     wl-copy < $filename &
