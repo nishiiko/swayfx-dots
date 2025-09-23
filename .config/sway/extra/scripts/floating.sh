@@ -7,7 +7,7 @@ while read -r line; do
     if [[ $floatingState == '"con"' ]]; then
         swaymsg [con_id = $windowID] border normal 6
     elif [[ $floatingState == '"floating_con"' ]]; then
-        swaymsg [con_id = $windowID] border pixel 4 
+        swaymsg [con_id = $windowID] border pixel 6 
     fi;
     
 done < <(swaymsg -m -t subscribe '[ "window" ]')
