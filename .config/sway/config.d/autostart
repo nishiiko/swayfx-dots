@@ -8,6 +8,7 @@ exec swww-daemon
 exec /usr/lib*/polkit-mate-authentication-agent-1 &
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
 exec waybar
+exec easyeffects --gapplication-service
 exec rm $HOME/.screenshotLock
 exec rm $HOME/.tmpRegion
 exec swaync
