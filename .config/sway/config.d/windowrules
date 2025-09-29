@@ -11,6 +11,9 @@ assign [class="^(obs)$"] workspace 10
 assign [app_id="^(com.obsproject.Studio)$"] workspace 10
 
 # floats
+#float template
+#for_window [app_id="^()$"] floating enable
+
 for_window [class="^steam$" title="^(?!.*Steam).*$"] floating enable
 for_window [app_id="^(org.gnome.Nautilus)$"] floating enable
 
@@ -29,6 +32,7 @@ for_window [title = "(?i).*Bitwarden Password Manager.*"] floating enable
 for_window [title = "About Zen Browser"] floating enable
 for_window [window_role = "About"] floating enable
 
+for_window [app_id="^(eog)$"] floating enable
 for_window [app_id="^(org.twosheds.iwgtk)$"] floating enable
 for_window [app_id="^(iwgtk)$"] floating enable
 for_window [app_id="^(io.missioncenter.MissionCenter)$"] floating enable

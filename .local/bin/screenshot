@@ -15,7 +15,7 @@ if command -v hyprpicker > /dev/null; then
 fi
 }
 
-slorp () {
+slorp () { # i swear this is all necessary just to launch slurp above hyprpicker i promise
 time1=$(date +%s%3N)
 until [ ! -z "$area" ]; do
     area=$(slurp -d -c ffffffff -b 00000088 -w 3)
