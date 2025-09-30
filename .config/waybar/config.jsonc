@@ -10,7 +10,7 @@
     // Choose the order of the modules
     "modules-left": [
         "wlr/taskbar",
-        "network"
+        "group/connection"
     ],
     "modules-center": [
         "sway/workspaces"
@@ -115,17 +115,36 @@
         "format-icons": ["", "", "", "", ""],
         "interval": 1
     },
+    
+    
+    "group/connection": {
+        "orientation": "horizontal",
+        "modules": [
+            "network",
+            "custom/vpn"
+        ]
+    },
+
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid}  ",
+        "format-wifi": " ",
         "format-ethernet": "{ipaddr}/{cidr}  ",
         "tooltip-format": "{ifname} via {gwaddr}  ",
         "format-linked": "{ifname} (No IP)  ",
         "format-disconnected": "Disconnected ⚠",
         "on-click": "killall iwgtk;iwgtk",
-        //"format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "interval": 2
+        "interval": 1
     },
+    
+    "custom/vpn": {
+        "format": "{icon} {text}",
+        "tooltip-format": "{icon}",
+        "exec": "$HOME/.config/waybar/scripts/vpn.sh",
+        "return-type": "json",
+        "interval": 1,
+        "format-icons": ["  ","  "]
+    },
+
     "pulseaudio": {
         "scroll-step": 5, // %, can be a float
         "format": "{volume}% {icon}",
@@ -141,6 +160,6 @@
             "car": " ",
             "default": [" ", " ", " "]
         },
-        "on-click": "killall pavucontrol ; pavucontrol"
+        "n-click": "killall pavucontrol ; pavucontrol"
     }
 }
