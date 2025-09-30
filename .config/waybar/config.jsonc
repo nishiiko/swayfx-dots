@@ -137,7 +137,7 @@
     },
     
     "custom/vpn": {
-        "format": "{icon} {text}",
+        "format": "{icon} {text} ",
         "tooltip-format": "{icon}",
         "exec": "$HOME/.config/waybar/scripts/vpn.sh",
         "return-type": "json",
