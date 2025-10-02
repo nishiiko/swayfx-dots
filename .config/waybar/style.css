@@ -13,7 +13,6 @@
 #scratchpad,
 #hardware,
 #language,
-/* #battery, */
 #privacy,
 #taskbar,
 #clock,
@@ -62,7 +61,7 @@ button:hover {
 #workspaces button.active,
 #workspaces button.focused {
     padding: 0px 20px;
-    margin: 4px -4px;
+    margin: 4px 0px;
     color: alpha(@active-text, 1);
     background-color: @button-hl;
     transition: all 0.3s cubic-bezier(0,0,.2,1)
