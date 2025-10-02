@@ -10,13 +10,13 @@
     // Choose the order of the modules
     "modules-left": [
         "wlr/taskbar",
-        "group/connection"
+        "group/connection",
+        "privacy"
     ],
     "modules-center": [
         "sway/workspaces"
     ],
     "modules-right": [
-        "privacy",
         "group/hardware",
         "pulseaudio",
         "tray",
@@ -43,7 +43,6 @@
         "orientation": "horizontal",
         "modules": [
             "cpu",
-            "temperature",
             "battery"
         ]
     },
