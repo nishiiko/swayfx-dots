@@ -2,6 +2,6 @@
 ip=$(curl -s https://icanhazip.com)
 
 # only works with mullvad, adjust as needed
-ls /proc/sys/net/ipv4/conf/*mullvad* &>/dev/null \
+mullvad status | grep "Connected" &>/dev/null \
 && jq -c -n --arg ip "$ip" '{"text":$ip,"class":"connected","percentage":100}' \
 || echo '{"text":"VPN Disconnected","class":"disconnected","percentage":0}'
