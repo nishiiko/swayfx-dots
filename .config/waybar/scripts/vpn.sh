@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 strip_all () {
     printf '%s\n' "${1//$2}"

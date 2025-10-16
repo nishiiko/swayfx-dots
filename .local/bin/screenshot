@@ -36,7 +36,7 @@ case $1 in
         type="Region"
         freezeGuarantee
         slorp
-        if [ ! -z "$area" ]; then
+        if [ -n "$area" ]; then
             grim -l 1 -g "$area" $tmpregion 
             magick $tmpregion -shave 4x5 PNG:$filename
         fi

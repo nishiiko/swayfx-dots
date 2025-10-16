@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 read -p "this will copy files into:
 $HOME/.config
 $HOME/.local

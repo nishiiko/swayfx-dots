@@ -16,14 +16,21 @@ hyprlock\
 waybar\
 [autotiling-rs](https://github.com/ammgws/autotiling-rs)
 
-# stuff needed for the screenshot script
+# stuff needed for small scripts
+
+## screenshot
 jq\
 grim\
+sway\
 slurp\
-swaymsg\
 imagemagick\
 wl-clipboard\
 hyprpicker (freeze screen)
+
+## waybar vpn module
+jq\
+curl\
+mullvad
 
 ![screenshot of desktop](screenshot.png)
 ![screenshot with three terminals open](screenshot2.png)
