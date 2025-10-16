@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 filename=$HOME/Pictures/Screenshots/$(date +'Screenshot_%Y-%m-%d_%H-%M-%S.png')
-lockdir=/var/tmp/swayScreenshot
-lockpath=/var/tmp/swayScreenshot/lockfile
-tmpregion=$(mktemp --tmpdir=$lockdir --dry-run)
+lockdir=$HOME/.tmp
+lockpath=$lockdir/lockfile
+tmpregion=$lockdir/tmpCapture
 monitor=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
 
 freezeGuarantee() { #i hope its guaranteed at least
