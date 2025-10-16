@@ -31,9 +31,9 @@ if [ $confirm == "y" ]; then
     
     sed -i "s/nishi/$USER/g" config/swaync/config.json
 
-    cp -v .config/* -r $HOME/.config
-    cp -v .local/* -r $HOME/.local
-    cp -v Pictures/* -r $HOME/Pictures
+    cp -Rv .config/* $HOME/.config
+    cp -Rv .local/* $HOME/.local
+    cp -Rv Pictures/* $HOME/Pictures
     echo
     echo done
 fi
