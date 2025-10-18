@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
-strip_all () {
-    printf '%s\n' "${1//$2}"
-}
+vpn_ip=
 
-# only works with mullvad, adjust as needed
-mullvad status | grep -e "Connected" -e "Connecting" &>/dev/null \
-&& ip=$(curl -s4 ipinfo.io | jq -r '"\(.ip) \(.country)"') \
-&& ip=$(strip_all "$ip" "[\"]") \
-&& jq -c -n --arg ip "$ip" '{"text":$ip,"class":"connected","percentage":100}' \
-|| echo '{"text":"VPN Disconnected","class":"disconnected","percentage":0}'
+if mullvad status | grep -q -e "Disconnected" -e "Disconnecting"; then
+    echo '{"text":"VPN Disconnected","class":"disconnected","percentage":0}'
+    exit
+fi
+    
+until [[ -n "$vpn_ip" ]]; do
+    vpn_ip=$(curl -s4 ipinfo.io | jq -r '"\(.ip) \(.country)"')
+    if [[ -n "$vpn_ip" ]]; then
+        jq -c -n --arg ip "$vpn_ip" '{"text":$ip,"class":"connected","percentage":100}'
+    fi
+done

@@ -1,6 +1,6 @@
 input "type:keyboard" {
     xkb_layout gb(colemak_dh),gb
-    xkb_options grp:win_space_toggle,ctrl:nocaps
+    xkb_options grp:win_space_toggle,caps:ctrl_shifted_capslock
 }
 
 input "type:pointer" {
