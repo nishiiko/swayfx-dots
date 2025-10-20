@@ -11,7 +11,7 @@ swayfx (duh)\
 swww\
 swaync\
 foot\
-rofi\
+rofi (+ rofi emoji)\
 hyprlock\
 waybar\
 [autotiling-rs](https://github.com/ammgws/autotiling-rs)
