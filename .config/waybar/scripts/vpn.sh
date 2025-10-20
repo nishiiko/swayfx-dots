@@ -2,11 +2,11 @@
 
 vpn_ip=
 
-if mullvad status | grep -q -e "Disconnected" -e "Disconnecting"; then
+if ! mullvad status | grep -q -e "Connecting" -e "Conneced"; then
     echo '{"text":"VPN Disconnected","class":"disconnected","percentage":0}'
     exit
 fi
-    
+
 until [[ -n "$vpn_ip" ]]; do
     vpn_ip=$(curl -s4 ipinfo.io | jq -r '"\(.ip) \(.country)"')
     if [[ -n "$vpn_ip" ]]; then
