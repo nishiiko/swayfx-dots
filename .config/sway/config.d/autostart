@@ -6,6 +6,7 @@ exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.config/waybar/scripts/vpn-watch.sh
 exec $HOME/.local/bin/autotiling-rs
 exec swww-daemon
+exec wl-clip-persist --clipboard regular
 exec /usr/lib*/polkit-mate-authentication-agent-1 &
 exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
 exec waybar
