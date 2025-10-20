@@ -2,7 +2,7 @@
 
 vpn_ip=
 
-if ! mullvad status | grep -q -e "Connecting" -e "Connected"; then
+if ! mullvad status | grep -q -e "Connecting" -e "Conneced"; then
     echo '{"text":"VPN Disconnected","class":"disconnected","percentage":0}'
     exit
 fi
