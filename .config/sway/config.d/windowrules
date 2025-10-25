@@ -5,10 +5,9 @@ assign [app_id="^(firefox-bin|firefox|zen)$"] workspace 1
 assign [app_id="(?i).*cord"] workspace 2
 assign [class="(?i).*cord"] workspace 2
 assign [app_id="^(foot|footclient)$"] workspace 3
-assign [class="^(steam)$"] workspace 4
+assign [class="^(steam)$" title="^(Steam)$"] workspace 4
 assign [class="^(Spotify)$"] workspace 9
-assign [class="^(obs)$"] workspace 10
-assign [app_id="^(com.obsproject.Studio)$"] workspace 10
+assign [app_id="^(com.obsproject.Studio)$" title="^(OBS.*)$"] workspace 10
 
 # floats
 #float template
