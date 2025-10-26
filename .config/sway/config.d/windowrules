@@ -1,9 +1,9 @@
 for_window [all] allow_tearing yes
 for_window [all] opacity set 1.0 
 
-assign [app_id="^(firefox-bin|firefox|zen)$"] workspace 1
-assign [app_id="(?i).*cord"] workspace 2
-assign [class="(?i).*cord"] workspace 2
+assign [app_id="^(firefox-bin|firefox)$"] workspace 1
+assign [app_id="discord"] workspace 2
+assign [class="discord"] workspace 2
 assign [app_id="^(foot|footclient)$"] workspace 3
 assign [class="^(steam)$" title="^(Steam)$"] workspace 4
 assign [class="^(Spotify)$"] workspace 9
