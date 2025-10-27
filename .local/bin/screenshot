@@ -5,6 +5,10 @@ lockpath=$lockdir/lockfile
 tmpregion=$lockdir/tmpCapture
 monitor=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
 
+if [ -e $lockdir ]; then
+    exit
+fi
+
 freezeGuarantee() { #i hope its guaranteed at least
 if command -v hyprpicker > /dev/null; then
     hyprpicker -r -n -z -q &
@@ -28,7 +32,7 @@ until [ ! -z "$area" ]; do
 done
 }
 
-if mkdir -p $lockdir 2>/dev/null && touch $lockpath 2>/dev/null; then
+mkdir -p $lockdir 2>/dev/null && touch $lockpath 2>/dev/null
 trap 'rm -rf $lockdir & killall hyprpicker 2>/dev/null' EXIT
 
 case $1 in
@@ -65,10 +69,6 @@ case $1 in
         notify-send "Screenshot Error" "Flag written incorrectly"
     ;;
 esac
-
-else
-    echo "Remove $lockdir directory"
-fi
 
 if [ -f "$filename" ]; then
     wl-copy < $filename &
