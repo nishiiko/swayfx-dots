@@ -37,6 +37,8 @@ jq\
 curl\
 mullvad
 
+![screenshot of desktop](screenshot3.png)
+![screenshot with three terminals open](screenshot4.png)
 ![screenshot of desktop](screenshot.png)
 ![screenshot with three terminals open](screenshot2.png)
 
