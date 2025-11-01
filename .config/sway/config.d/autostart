@@ -2,13 +2,12 @@ exec dbus-update-activataion-environment --all
 exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
 exec $HOME/.config/sway/extra/scripts/opacity.sh 0.9 1
+exec $HOME/.config/sway/extra/scripts/wallpaper.sh
 exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.config/waybar/scripts/vpn-watch.sh
 exec $HOME/.local/bin/autotiling-rs
-exec swww-daemon
 exec wl-clip-persist --clipboard regular
 exec /usr/lib*/polkit-mate-authentication-agent-1 &
-exec swww img $HOME/Pictures/Wallpapers/omori.png --transition-type grow --transition-duration 3
 exec waybar
 exec rm $HOME/.screenshotLock
 exec rm $HOME/.tmpRegion

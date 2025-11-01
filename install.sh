@@ -31,11 +31,9 @@ if [ $confirm == "y" ]; then
         : $((countdown--))
     done
     
-    sed -i "s/nishi/$USER/g" .config/swaync/config.json
-
-    cp -Rv .config/* $HOME/.config
-    cp -Rv .local/* $HOME/.local
-    cp -Rv Pictures/* $HOME/Pictures
+    cp -rv --preserve=links .config/* $HOME/.config
+    cp -rv --preserve=links .local/* $HOME/.local
+    cp -rv --preserve=links Pictures/* $HOME/Pictures
     echo
     echo done
 fi

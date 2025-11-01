@@ -9,16 +9,16 @@
     "margin-bottom": 0,
     // Choose the order of the modules
     "modules-left": [
-        "wlr/taskbar",
+    //  "wlr/taskbar",
         "group/connection",
+        "group/hardware",
+        "pulseaudio",
         "privacy"
     ],
     "modules-center": [
         "sway/workspaces"
     ],
     "modules-right": [
-        "group/hardware",
-        "pulseaudio",
         "tray",
         "clock"
     ],
