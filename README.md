@@ -28,7 +28,7 @@ jq\
 grim\
 sway\
 slurp\
-imagemagick\
+graphicsmagick\
 wl-clipboard\
 hyprpicker (freeze screen)
 

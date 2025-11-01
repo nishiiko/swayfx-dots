@@ -38,7 +38,7 @@ case $1 in
         slorp
         if [ -n "$area" ]; then
             grim -l 1 -g "$area" $tmpregion 
-            magick $tmpregion -shave 4x4 PNG:$filename
+            gm convert $tmpregion -shave 4x4 PNG:$filename
         fi
     ;;
 

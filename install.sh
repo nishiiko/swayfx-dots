@@ -48,6 +48,12 @@ if [ $confirm == "y" ]; then
     cp -rv --preserve=links .config/* $HOME/.config
     cp -rv --preserve=links .local/* $HOME/.local
     cp -rv --preserve=links Pictures/* $HOME/Pictures
+    
+    swaync-client -R &
+    swaync-client -rs &
+    swaymsg reload
+    $HOME/.config/sway/extra/scripts/wallpaper.sh & disown
+    killall waybar ; waybar & disown
     echo
     echo done
 fi
