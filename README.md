@@ -6,9 +6,14 @@ yell at me in issues if something no worky
 gentoo linux\
 openrc
 
+theres a theme switcher in ~/.config/sway/extra/scripts/themeswap.sh\
+ill make a rofi menu instead when i eventually get too annoyed\
+at manually invoking the script
+
 ## things you need (maybe):
 swayfx (duh)\
-swww\
+swww (purple theme)\
+mpvpaper (green theme)\
 swaync\
 foot\
 rofi (+ rofi emoji)\
@@ -23,7 +28,7 @@ jq\
 grim\
 sway\
 slurp\
-imagemagick\
+graphicsmagick\
 wl-clipboard\
 hyprpicker (freeze screen)
 
@@ -32,6 +37,8 @@ jq\
 curl\
 mullvad
 
+![screenshot of desktop](screenshot3.png)
+![screenshot with three terminals open](screenshot4.png)
 ![screenshot of desktop](screenshot.png)
 ![screenshot with three terminals open](screenshot2.png)
 
