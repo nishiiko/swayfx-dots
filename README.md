@@ -4,7 +4,7 @@ yell at me in issues if something no worky
 
 ## some info
 gentoo linux\
-openrc\
+openrc
 
 theres a theme switcher in ~/.config/sway/extra/scripts/themeswap.sh\
 ill make a rofi menu instead when i eventually get too annoyed\
