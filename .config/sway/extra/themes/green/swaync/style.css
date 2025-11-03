@@ -260,12 +260,13 @@ notificationwindow, blankwindow, blankwindow {
 .notification-group {
   /* Styling only for Grouped Notifications */
   transition: opacity 200ms ease-in-out;
+  outline: transparent;
   /* The groups close button */
 }
 
 .notification-group:focus {
   background: var(--noti-bg-focus);
-  
+  outline: transparent;
 }
 
 .notification-group.low {
