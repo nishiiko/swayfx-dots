@@ -8,8 +8,7 @@ exec $HOME/.config/waybar/scripts/vpn-watch.sh
 exec $HOME/.local/bin/autotiling-rs
 exec /usr/lib*/polkit-mate-authentication-agent-1 &
 exec waybar
-exec rm $HOME/.screenshotLock
-exec rm $HOME/.tmpRegion
+exec rm -rf $HOME/.tmpSwayCapture/
 exec swaync
 exec fcitx5 -d
 exec otd-daemon
