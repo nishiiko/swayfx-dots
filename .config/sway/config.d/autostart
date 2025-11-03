@@ -6,7 +6,6 @@ exec $HOME/.config/sway/extra/scripts/wallpaper.sh
 exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.config/waybar/scripts/vpn-watch.sh
 exec $HOME/.local/bin/autotiling-rs
-exec wl-clip-persist --clipboard regular
 exec /usr/lib*/polkit-mate-authentication-agent-1 &
 exec waybar
 exec rm $HOME/.screenshotLock
