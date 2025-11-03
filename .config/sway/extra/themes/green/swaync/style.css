@@ -265,6 +265,7 @@ notificationwindow, blankwindow, blankwindow {
 
 .notification-group:focus {
   background: var(--noti-bg-focus);
+  
 }
 
 .notification-group.low {
@@ -286,6 +287,7 @@ notificationwindow, blankwindow, blankwindow {
 .notification-group .notification-group-buttons, .notification-group .notification-group-headers {
   margin: 0 16px;
   color: var(--text-color);
+  border: none;
 }
 
 .notification-group .notification-group-headers {
