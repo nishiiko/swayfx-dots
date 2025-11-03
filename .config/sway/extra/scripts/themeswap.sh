@@ -20,7 +20,7 @@ ln -sfrv $PWD/$theme/fastfetch/* $HOME/.config/fastfetch/
 ln -sfrv $PWD/$theme/foot/colours.ini $HOME/.config/foot/colours.ini
 ln -sfrv $PWD/$theme/rofi/* $HOME/.config/rofi/
 ln -sfrv $PWD/$theme/sway/decorations $HOME/.config/sway/config.d/decorations
-ln -sfrv $PWD/$theme/sway/hyprlock $HOME/.config/sway/config.d/hyprlock
+ln -sfrv $PWD/$theme/sway/hyprlock.conf $HOME/.config/sway/hyprlock.conf
 ln -sfrv $PWD/$theme/wallpaper.sh $HOME/.config/sway/extra/scripts/wallpaper.sh
 ln -sfrv $PWD/$theme/swaync/style.css $HOME/.config/swaync/style.css
 ln -sfrv $PWD/$theme/waybar/colours.css $HOME/.config/waybar/colours.css

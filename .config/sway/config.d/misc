@@ -1,2 +1,3 @@
+bindswitch --reload --locked lid:on exec hyprlock --config $HOME/.config/sway/hyprlock.conf
 floating_maximum_size -1 x -1
 focus_follows_mouse always
