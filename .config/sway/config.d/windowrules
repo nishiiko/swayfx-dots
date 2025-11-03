@@ -15,7 +15,6 @@ assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
 
 for_window [class="^(steam$)" title="^(?!Steam$)"] floating enable
 
-for_window [app_id="^(org.gnome.Nautilus$)"] floating enable
 for_window [window_role = "pop-up"] floating enable
 for_window [window_role = "bubble"] floating enable
 for_window [window_role = "dialog"] floating enable
@@ -28,9 +27,10 @@ for_window [class = "(?i)pinentry"] floating enable
 for_window [title = "Administrator privileges required"] floating enable
 
 for_window [title = "(?i).*Bitwarden Password Manager.*"] floating enable
-for_window [title = "About Zen Browser"] floating enable
+for_window [title = "^(About Mozilla Firefox$)"] floating enable
 for_window [window_role = "About"] floating enable
 
+for_window [app_id="^(org.gnome.Nautilus$)"] floating enable
 for_window [app_id="^(eog$)"] floating enable
 for_window [app_id="^(org.twosheds.iwgtk$)"] floating enable
 for_window [app_id="^(iwgtk$)"] floating enable
@@ -39,5 +39,6 @@ for_window [app_id="^(org.pulseaudio.pavucontrol$)"] floating enable
 for_window [app_id="^(piper$)"] floating enable
 for_window [app_id="^(blueman-manager$)"] floating enable
 for_window [app_id="^(mpv$)"] floating enable
+for_window [app_id="^(Bitwarden$)"] floating enable
 
 for_window [shell="xwayland"] title_format %title "[Xwayland]"
