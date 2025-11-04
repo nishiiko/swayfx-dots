@@ -17,6 +17,7 @@
   "notification-inline-replies": false,
   "notification-body-image-height": 100,
   "notification-body-image-width": 200,
+  "notification-window-height": 300,
   "timeout": 10,
   "timeout-low": 5,
   "timeout-critical": 0,
