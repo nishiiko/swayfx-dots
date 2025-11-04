@@ -1,5 +1,5 @@
 set $mod Mod4
-set $term foot 
+set $term foot
 set $filemanager nautilus
 set $menu rofi -show drun
 
