@@ -17,7 +17,7 @@ killall swww-daemon
 killall mpvpaper
 
 ln -sfrv $PWD/$theme/fastfetch/* $HOME/.config/fastfetch/
-ln -sfrv $PWD/$theme/foot/colours.ini $HOME/.config/foot/colours.ini
+ln -sfrv $PWD/$theme/alacritty/colours.toml $HOME/.config/alacritty/colours.toml
 ln -sfrv $PWD/$theme/rofi/* $HOME/.config/rofi/
 ln -sfrv $PWD/$theme/sway/decorations $HOME/.config/sway/config.d/decorations
 ln -sfrv $PWD/$theme/sway/hyprlock.conf $HOME/.config/sway/hyprlock.conf

@@ -15,7 +15,7 @@ swayfx (duh)\
 swww (purple theme)\
 mpvpaper (green theme)\
 swaync\
-foot\
+alacritty [(fork)](https://github.com/ayosec/alacritty/tree/graphics)\
 rofi (+ rofi emoji)\
 hyprlock\
 waybar\

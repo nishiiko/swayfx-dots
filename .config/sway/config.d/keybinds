@@ -1,5 +1,5 @@
 set $mod Mod4
-set $term foot
+set $term alacritty msg create-window || alacritty
 set $filemanager nautilus
 set $menu rofi -show drun
 
