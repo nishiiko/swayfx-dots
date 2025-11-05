@@ -13,10 +13,11 @@ assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
 #float template
 #for_window [app_id="^($)"] floating enable
 
-for_window [class="^(steam$)" title="^(?!Steam$)"] floating enable
-
 for_window [title = "(?i).*Bitwarden Password Manager.*"] floating enable
 for_window [title = "^(About Mozilla Firefox$)"] floating enable
+
+for_window [class="^(steam$)" title="^(?!Steam$)"] floating enable
+for_window [class="^(love$)"] floating enable # celeste modloader
 
 for_window [app_id="^(org.gnome.Nautilus$)"] floating enable
 for_window [app_id="^(eog$)"] floating enable
