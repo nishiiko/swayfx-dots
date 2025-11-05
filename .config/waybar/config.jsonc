@@ -112,7 +112,7 @@
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " ",
         "format-ethernet": " ",
-        "format-linked": "{ifname} (No IP)  ",
+        "format-linked": " ",
         "format-disconnected": "  Disconnected",
         "on-click": "killall iwgtk;iwgtk",
         "tooltip-format": "{essid}",
