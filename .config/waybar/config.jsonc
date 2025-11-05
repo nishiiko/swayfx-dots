@@ -91,7 +91,7 @@
         "format": " {capacity}% {icon} ",
         "format-charging": " {capacity}% {icon} ",
         "format-plugged": " {capacity}% {icon} ",
-        "design-capacity": true,
+        "design-capacity": false,
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""],
