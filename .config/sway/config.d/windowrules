@@ -10,9 +10,6 @@ assign [class="^(Spotify$)"] workspace 9
 assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
 
 # floats
-#float template
-#for_window [app_id="^($)"] floating enable
-
 for_window [title = "(?i).*Bitwarden Password Manager.*"] floating enable
 for_window [title = "^(About Mozilla Firefox$)"] floating enable
 
@@ -30,5 +27,6 @@ for_window [app_id="^(blueman-manager$)"] floating enable
 for_window [app_id="^(mpv$)"] floating enable
 for_window [app_id="^(Bitwarden$)"] floating enable
 for_window [app_id="^(tuned-gui$)"] floating enable
+for_window [app_id="^(OpenTabletDriver.UX.Gtk$)"] floating enable
 
 for_window [shell="xwayland"] title_format %title "[Xwayland]"
