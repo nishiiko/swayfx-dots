@@ -1,4 +1,4 @@
-exec dbus-update-activataion-environment --all
+exec --no-startup-id dbus-update-activataion-environment --all
 exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
 exec $HOME/.config/sway/extra/scripts/opacity.sh 0.9 1

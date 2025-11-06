@@ -30,5 +30,6 @@ for_window [app_id="^(tuned-gui$)"] floating enable
 for_window [app_id="^(OpenTabletDriver.UX.Gtk$)"] floating enable
 for_window [app_id="^(com.github.tchx84.Flatseal$)"] floating enable
 for_window [app_id="^(xdg-desktop-portal-gtk$)"] floating enable
+for_window [app_id="^(nwg-look$)"] floating enable
 
 for_window [shell="xwayland"] title_format %title "[Xwayland]"

@@ -9,7 +9,7 @@ configuration {
 	sorting-method: "fzf";
 	matching: "fuzzy";
 	hide-scrollbar: true;
-	terminal: "foot";
+	terminal: "alacritty";
 	sidebar-mode: true;
 	hover-select: true;
 }

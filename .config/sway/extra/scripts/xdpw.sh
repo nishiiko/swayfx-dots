@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-sleep 1
 killall xdg-desktop-portal
 killall xdg-desktop-portal-gtk
 killall xdg-desktop-portal-wlr
-/usr/lib*/xdg-desktop-portal-wlr &
-/usr/lib*/xdg-desktop-portal-gtk &
+sleep 1
+/usr/lib*/xdg-desktop-portal-wlr -r &
+/usr/lib*/xdg-desktop-portal-gtk -r &
 sleep 2
-/usr/lib*/xdg-desktop-portal &
+/usr/lib*/xdg-desktop-portal -r &

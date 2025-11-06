@@ -1,7 +1,7 @@
 configuration {
 	drun-display-format: "{name}";
 	font: "Ubuntu Mono 20";
-	modi: "drun,run,emoji";
+    modi: "drun,run,emoji";
 
 	sort: true;
 	history: false;
@@ -9,7 +9,7 @@ configuration {
 	sorting-method: "fzf";
 	matching: "fuzzy";
 	hide-scrollbar: true;
-	terminal: "foot";
+	terminal: "alacritty";
 	sidebar-mode: true;
 	hover-select: true;
 }
