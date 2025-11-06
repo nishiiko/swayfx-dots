@@ -12,8 +12,8 @@ blur enable
 blur_xray false
 blur_passes 4 
 blur_radius 5
-blur_saturation 1.2
-blur_brightness 0.95
+blur_saturation 1.1
+blur_brightness 0.9
 
 title_align center
 
