@@ -5,7 +5,7 @@ assign [app_id="^(firefox-bin$|firefox$)"] workspace 1
 assign [app_id="^(discord$)"] workspace 2
 assign [app_id="^(Alacritty$)"] workspace 3
 assign [class="^(steam$)" title="^(Steam$|Sign in to Steam$|Special Offers$)"] workspace 4
-assign [class="^(Spotify$)"] workspace 9
+assign [app_id="^(spotify$)"] workspace 9
 assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
 
 # floats
