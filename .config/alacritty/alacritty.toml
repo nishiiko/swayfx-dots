@@ -4,6 +4,7 @@ import = ["~/.config/alacritty/colours.toml"]
 [window]
 opacity = 0.65
 padding = { x = 10, y = 10 } 
+decorations = "None"
 
 [font]
 normal = { family = "UbuntuMono Nerd Font", style = "bold" }
