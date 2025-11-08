@@ -7,9 +7,11 @@ if ! mullvad status | grep -q -e "Connecting" -e "Connected"; then
     exit
 fi
 
-until [[ -n "$vpn_ip" ]]; do
-    vpn_ip=$(curl -s4 ipinfo.io | jq -r '"\(.ip) \(.country)"')
-    if [[ -n "$vpn_ip" ]]; then
-        jq -c -n --arg ip "$vpn_ip" '{"text":$ip,"class":"connected","percentage":100}'
-    fi
+until mullvad status | grep -q "Connected"; do
+    continue
 done
+
+vpn_ip=$(curl -s4 ipinfo.io | jq -r '"\(.ip) \(.country)"')
+if [[ -n "$vpn_ip" ]]; then
+    jq -c -n --arg ip "$vpn_ip" '{"text":$ip,"class":"connected","percentage":100}'
+fi
