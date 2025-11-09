@@ -3,11 +3,11 @@ exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
 exec $HOME/.config/sway/extra/scripts/opacity.sh 0.9 1
 exec $HOME/.config/sway/extra/scripts/wallpaper.sh
+exec $HOME/.config/sway/extra/scripts/waybar.sh
 exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.config/waybar/scripts/vpn-watch.sh
 exec $HOME/.local/bin/autotiling-rs
 exec /usr/lib*/polkit-mate-authentication-agent-1 &
-exec waybar
 exec rm -rf $HOME/.tmpSwayCapture/
 exec swaync
 exec fcitx5 -d
