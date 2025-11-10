@@ -12,4 +12,6 @@ exec rm -rf $HOME/.tmpSwayCapture/
 exec swaync
 exec fcitx5 -d
 exec otd-daemon
+exec sway-audio-idle-inhibit
+exec swayidle -w
 exec swaymsg workspace number 1
