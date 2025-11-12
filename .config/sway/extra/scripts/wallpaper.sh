@@ -1,1 +1,1 @@
-../themes/purple/wallpaper.sh
+../themes/green/wallpaper.sh
