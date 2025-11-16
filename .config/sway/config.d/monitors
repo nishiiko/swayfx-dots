@@ -1,7 +1,7 @@
 set $primary DP-1
 set $secondary HDMI-A-1
  
-output $primary mode 1920x1080@144Hz pos 0 0 adaptive_sync on allow_tearing yes max_render_time off 
+output $primary mode 1920x1080@144Hz pos 0 0 adaptive_sync on allow_tearing yes max_render_time off
 output $secondary mode 1920x1080@75Hz pos 1920 0 max_render_time off
 output eDP-1 mode 1920x1080@60Hz pos 0 0 allow_tearing off max_render_time 16
 
