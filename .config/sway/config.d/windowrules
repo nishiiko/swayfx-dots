@@ -11,11 +11,13 @@ assign [app_id="^(spotify$)"] workspace 9
 assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
 
 # floats
-for_window [title = "(?i).*Bitwarden Password Manager.*"] floating enable
-for_window [title = "^(About Mozilla Firefox$)"] floating enable
+
+for_window [title="(?i).*Bitwarden Password Manager.*"] floating enable
+for_window [title="^(About Mozilla Firefox$)"] floating enable
 
 for_window [class="^(steam$)" title="^(?!Steam$)"] floating enable
 for_window [class="^(love$)"] floating enable
+for_window [app_id="^(soffice$)" title="^(Open$)"] floating enable
 
 for_window [app_id="^(org.gnome.Nautilus$)"] floating enable
 for_window [app_id="^(eog$)"] floating enable

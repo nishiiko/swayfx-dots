@@ -124,7 +124,6 @@
         "tooltip": false,
         "exec": "$HOME/.config/waybar/scripts/vpn.sh",
         "return-type": "json",
-        "on-click": "mullvad-vpn",
         "interval": 600,
         "signal": 8,
         "format-icons": ["  ","  "]
