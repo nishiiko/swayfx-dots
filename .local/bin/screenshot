@@ -33,7 +33,7 @@ done
 }
 
 mkdir -p $lockdir 2>/dev/null && touch $lockpath 2>/dev/null
-trap 'rm -rf $lockdir & killall hyprpicker 2>/dev/null' EXIT
+trap 'rm -rf $lockdir & pkill hyprpicker 2>/dev/null' EXIT
 
 case $1 in
     --region)
