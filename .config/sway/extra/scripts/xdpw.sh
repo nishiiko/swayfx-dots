@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-killall xdg-desktop-portal
-killall xdg-desktop-portal-gtk
-killall xdg-desktop-portal-wlr
+pkill -f xdg-desktop-portal
+pkill -f xdg-desktop-portal-gtk
+pkill -f xdg-desktop-portal-wlr
 sleep 1
 /usr/lib*/xdg-desktop-portal-wlr -r &
 /usr/lib*/xdg-desktop-portal-gtk -r &

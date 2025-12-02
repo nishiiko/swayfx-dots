@@ -20,8 +20,8 @@ bindsym --to-code $mod+Shift+s exec $HOME/.local/bin/screenshot --region
 bindsym --to-code $mod+Print exec $HOME/.local/bin/screenshot --all
 bindsym --to-code Print exec $HOME/.local/bin/screenshot --display
 
-bindsym --to-code --locked XF86MonBrightnessDown exec brightnessctl set 5%- --exponent=1 -s
-bindsym --to-code --locked XF86MonBrightnessUp exec brightnessctl set 5%+ --exponent=1 -s
+bindsym --to-code --locked XF86MonBrightnessDown exec brightnessctl set 1%- -e -s
+bindsym --to-code --locked XF86MonBrightnessUp exec brightnessctl set 1%+ -e -s
 
 bindsym --to-code --locked XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1
 bindsym --to-code --locked XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- 

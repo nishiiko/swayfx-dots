@@ -1,6 +1,6 @@
 seat * xcursor_theme Bibata-Modern-Ice 24 
 
-font pango:UbuntuMono Nerd Font 14
+font pango:UbuntuMono Nerd Font Bold 14
 
 titlebar_separator disable
 titlebar_padding 8

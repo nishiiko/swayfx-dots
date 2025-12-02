@@ -43,10 +43,7 @@
             "format": "{driver}"
         }, 
         "kernel",
-        {
-            "type": "packages",
-            "format": "{0} (portage)"
-        },
+        "packages",
         "memory",
         {
             "type": "disk",

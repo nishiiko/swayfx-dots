@@ -1,14 +1,18 @@
 for_window [all] allow_tearing yes
+for_window [app_id="^(com.app.Discord$|discord$|[Ff]irefox$|firefox-bin$)"] allow_tearing no
+for_window [class="^(discord$|Celeste$)"] allow_tearing no
 for_window [all] opacity set 1.0 
 
-assign [app_id="^(firefox-bin$|firefox$)"] workspace 1
-assign [app_id="^(discord$)"] workspace 2
+assign [app_id="^(firefox-bin$|[Ff]irefox$)"] workspace 1
+assign [app_id="^(discord$|com.discordapp.Discord$)"] workspace 2
 assign [class="^(discord$)"] workspace 2
 assign [app_id="^(Alacritty$)"] workspace 3
 assign [class="^(steam$)" title="^(Steam$|Sign in to Steam$|Special Offers$)"] workspace 4
 assign [class="^(Spotify$)"] workspace 9
 assign [app_id="^(spotify$)"] workspace 9
 assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
+
+for_window [class="^(steam_app_.*$)"] fullscreen enable
 
 # floats
 
@@ -18,7 +22,9 @@ for_window [title="^(About Mozilla Firefox$)"] floating enable
 for_window [class="^(steam$)" title="^(?!Steam$)"] floating enable
 for_window [class="^(love$)"] floating enable
 for_window [app_id="^(soffice$)" title="^(Open$)"] floating enable
+for_window [app_id="^([Ff]irefox$)" title="^(Library$)"] floating enable
 
+for_window [app_id="^(org.fcitx.fcitx5-config-qt$)"] floating enable
 for_window [app_id="^(org.gnome.Nautilus$)"] floating enable
 for_window [app_id="^(eog$)"] floating enable
 for_window [app_id="^(org.twosheds.iwgtk$)"] floating enable

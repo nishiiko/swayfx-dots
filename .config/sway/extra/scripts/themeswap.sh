@@ -13,8 +13,8 @@ echo ok
 hyprpicker -rz & disown
 sleep 0.2s
 
-killall swww-daemon
-killall mpvpaper
+pkill swww-daemon
+pkill mpvpaper
 
 ln -sfrv $PWD/$theme/fastfetch/* $HOME/.config/fastfetch/
 ln -sfrv $PWD/$theme/alacritty/colours.toml $HOME/.config/alacritty/colours.toml
@@ -30,7 +30,7 @@ swaync-client -R &
 swaync-client -rs &
 swaymsg reload &
 $HOME/.config/sway/extra/scripts/wallpaper.sh &
-killall waybar ; waybar &
+pkill waybar ; waybar &
 
 false
 until [ $? -eq 0 ]; do
@@ -38,4 +38,4 @@ until [ $? -eq 0 ]; do
 done
 
 sleep 0.5s;
-killall hyprpicker
+pkill hyprpicker

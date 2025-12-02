@@ -14,10 +14,14 @@ input "type:pointer" {
 input "type:touchpad" {
     natural_scroll enabled 
     accel_profile flat
-    pointer_accel 0.3
+    pointer_accel 0.35
     scroll_factor 0.5
     tap_button_map lrm
     drag_lock disabled
     dwt enabled 
     tap enabled 
+}
+
+input "type:tablet_tool" {
+    map_to_region 0 0 1920 1080
 }
