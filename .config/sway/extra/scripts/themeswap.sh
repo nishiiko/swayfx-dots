@@ -16,9 +16,9 @@ sleep 0.2s
 pkill swww-daemon
 pkill mpvpaper
 
-ln -sfrv $PWD/$theme/fastfetch/* $HOME/.config/fastfetch/
+ln -sfrv $PWD/$theme/fastfetch/ $HOME/.config/
 ln -sfrv $PWD/$theme/alacritty/colours.toml $HOME/.config/alacritty/colours.toml
-ln -sfrv $PWD/$theme/rofi/* $HOME/.config/rofi/
+ln -sfrv $PWD/$theme/rofi/ $HOME/.config/
 ln -sfrv $PWD/$theme/sway/decorations $HOME/.config/sway/config.d/decorations
 ln -sfrv $PWD/$theme/sway/hyprlock.conf $HOME/.config/sway/hyprlock.conf
 ln -sfrv $PWD/$theme/wallpaper.sh $HOME/.config/sway/extra/scripts/wallpaper.sh
