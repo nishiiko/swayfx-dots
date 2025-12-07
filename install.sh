@@ -15,7 +15,7 @@ using the install script
 BIG LETTERS SO YOU KNOW THIS IS IMPORTANT
 IT WILL RM -RF THESE DIRECTORIES
 $HOME/.config/fastfetch
-$HOME/.config/foot
+$HOME/.config/alacritty
 $HOME/.config/rofi
 $HOME/.config/sway
 $HOME/.config/swaync
@@ -39,7 +39,7 @@ if [ $confirm == "y" ]; then
     done
 
     rm -rf $HOME/.config/fastfetch
-    rm -rf $HOME/.config/foot
+    rm -rf $HOME/.config/alacritty
     rm -rf $HOME/.config/rofi
     rm -rf $HOME/.config/sway
     rm -rf $HOME/.config/swaync
