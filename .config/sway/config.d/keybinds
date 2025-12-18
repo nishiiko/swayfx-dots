@@ -15,7 +15,7 @@ bindsym --to-code $mod+Shift+c reload
 
 bindsym --to-code $mod+F2 exec $HOME/.config/sway/extra/scripts/dwt.sh
 
-bindsym --to-code $mod+Shift+s exec $HOME/.local/bin/screenshot --region
+bindsym --to-code $mod+Shift+r exec $HOME/.local/bin/screenshot --region
 bindsym --to-code $mod+Print exec $HOME/.local/bin/screenshot --all
 bindsym --to-code Print exec $HOME/.local/bin/screenshot --display
 
@@ -50,6 +50,16 @@ bindsym --to-code $mod+Shift+Left move left
 bindsym --to-code $mod+Shift+Down move down
 bindsym --to-code $mod+Shift+Up move up
 bindsym --to-code $mod+Shift+Right move right
+
+bindsym --to-code $mod+n focus left
+bindsym --to-code $mod+e focus down
+bindsym --to-code $mod+i focus up
+bindsym --to-code $mod+o focus right
+
+bindsym --to-code $mod+Shift+n move left
+bindsym --to-code $mod+Shift+e move down
+bindsym --to-code $mod+Shift+i move up
+bindsym --to-code $mod+Shift+o move right
 
 bindsym --to-code $mod+1 workspace number 1
 bindsym --to-code $mod+2 workspace number 2

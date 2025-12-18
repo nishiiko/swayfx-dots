@@ -3,7 +3,7 @@ for_window [app_id="^(com.app.Discord$|discord$|[Ff]irefox$|firefox-bin$)"] allo
 for_window [class="^(discord$)"] allow_tearing no
 for_window [all] opacity set 1.0 
 
-assign [app_id="^(firefox-bin$|[Ff]irefox$)"] workspace 1
+assign [app_id="^(firefox-(bin|esr)$|[Ff]irefox$)"] workspace 1
 assign [app_id="^(discord$|com.discordapp.Discord$)"] workspace 2
 assign [class="^(discord$)"] workspace 2
 assign [app_id="^(Alacritty$)"] workspace 3

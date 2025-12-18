@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 if [ $(swaync-client -D) = "false" ]; then
-	paplay $HOME/.config/swaync/ding.wav --volume=65535
+	paplay $HOME/.config/swaync/se_elevator_ding.ogg --volume=65535
 fi

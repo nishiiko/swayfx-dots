@@ -1,0 +1,11 @@
+set $focused #FDBDFFFF
+set $unfocused #9D6D9FEE
+set $textfocused #000000FF
+set $textunfocused #111111FF
+
+client.focused $focused $focused $textfocused $focused $focused
+client.focused_inactive $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.focused_tab_title $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.unfocused $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.background $unfocused $unfocused $textunfocused $unfocused $unfocused
+client.urgent $unfocused $unfocused $textunfocused $unfocused $unfocused
