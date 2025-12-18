@@ -53,7 +53,7 @@ if [ $confirm == "y" ]; then
     swaync-client -rs &
     swaymsg reload
     $HOME/.config/sway/extra/scripts/wallpaper.sh & disown
-    pkill waybar ; waybar & disown
+    pkill -x waybar ; waybar & disown
     echo
     echo done
 fi
