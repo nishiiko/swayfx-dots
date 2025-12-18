@@ -12,8 +12,8 @@ at manually invoking the script
 
 ## things you need (maybe):
 swayfx (duh)\
-swww (omori and tanger theme)\
-mpvpaper (nahida theme)\
+awww (formerly swww)\
+mpvpaper\
 swaync\
 alacritty [(fork)](https://github.com/ayosec/alacritty/tree/graphics)\
 rofi (+ rofi emoji)\
