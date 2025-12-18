@@ -335,7 +335,6 @@ notificationwindow, blankwindow, blankwindow {
   border: var(--widget-border);
   border-radius: var(--border-radius);
   background: var(--widget-background);
-  box-shadow: var(--notification-shadow);
 }
 
 /* Title widget */

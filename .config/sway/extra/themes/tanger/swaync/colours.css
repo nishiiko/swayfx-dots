@@ -31,5 +31,5 @@
   --font-size-time: 16px;
   --slider-checked: rgba(154, 199, 169, 1);
   --widget-border: 6px solid rgba(87, 132, 102, 1);
-  --widget-background: rgba(60, 75, 70, 1);
+  --widget-background: rgba(60, 75, 70, 0.65);
 }
