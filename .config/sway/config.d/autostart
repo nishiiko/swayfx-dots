@@ -10,7 +10,6 @@ exec $HOME/.config/sway/extra/scripts/xdpw.sh
 exec $HOME/.local/bin/autotiling-rs
 exec rm -rf $HOME/.tmpSwayCapture/
 exec swaymsg workspace number 1
-exec wlsunset -t 5000 -T 5001
 exec blueman-applet
 exec fcitx5 -d
 exec swaync
