@@ -1,9 +1,5 @@
 input "type:keyboard" {
     xkb_layout gb(colemak_dh),gb
-    xkb_options grp:win_space_toggle,caps:ctrl_shifted_capslock
-}
-
-input "1:1:AT_Translated_Set_2_keyboard" {
     xkb_options grp:win_space_toggle,caps:ctrl_shifted_capslock,altwin:swap_lalt_lwin
 }
 
