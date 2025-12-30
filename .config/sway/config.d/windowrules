@@ -6,8 +6,8 @@ for_window [all] opacity set 1.0
 assign [app_id="^([Ff]irefox(-esr|-bin|)$)"] workspace 1
 assign [app_id="^(discord$|com.discordapp.Discord$)"] workspace 2
 assign [class="^(discord$)"] workspace 2
-assign [app_id="^(Alacritty$)"] workspace 3
-assign [class="^(steam$)" title="^(Steam$|Sign in to Steam$|Special Offers$)"] workspace 4
+assign [class="^(steam$)" title="^(Steam$|Sign in to Steam$|Special Offers$)"] workspace 3
+assign [app_id="^(Alacritty$)"] workspace 4
 assign [class="^(Spotify$)"] workspace 9
 assign [app_id="^(spotify$)"] workspace 9
 assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
