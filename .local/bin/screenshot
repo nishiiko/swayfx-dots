@@ -73,7 +73,6 @@ esac
 if [ -f "$filename" ]; then
     wl-copy < $filename &
     $(notify-send "$type Screenshot" "Saved to $filename" --icon=$filename -a Screenshot -u critical -A "xdg-open $filename=View screenshot") &
-    paplay $HOME/.config/swaync/se_elevator_ding.ogg --volume=65535 &
 fi
 
 exit
