@@ -19,7 +19,7 @@ alacritty [(fork)](https://github.com/ayosec/alacritty/tree/graphics)\
 rofi (+ rofi emoji)\
 hyprlock\
 waybar\
-[autotiling-rs](https://github.com/ammgws/autotiling-rs)
+[autotiling](https://github.com/nwg-piotr/autotiling)
 
 # stuff needed for small scripts
 
@@ -37,8 +37,35 @@ jq\
 curl\
 mullvad
 
-![screenshot of desktop](screenshot3.png)
-![screenshot with three terminals open](screenshot4.png)
-![screenshot of desktop](screenshot.png)
-![screenshot with three terminals open](screenshot2.png)
+<details>
+  <summary>Tanger theme</summary>
 
+  <table>
+    <tr>
+      <td><img src="Pictures/tanger1.png" alt="screenshot of desktop" width="300"></td>
+      <td><img src="Pictures/tanger2.png" alt="screenshot of desktop" width="300"></td>
+    </tr>
+  </table>
+</details>
+
+<details>
+  <summary>Omori theme</summary>
+
+  <table>
+    <tr>
+      <td><img src="Pictures/omori1.png" alt="screenshot of desktop" width="300"></td>
+      <td><img src="Pictures/omori2.png" alt="screenshot of desktop" width="300"></td>
+    </tr>
+  </table>
+</details>
+
+<details>
+  <summary>Nahida theme</summary>
+
+  <table>
+    <tr>
+      <td><img src="Pictures/nahida1.png" alt="screenshot of desktop" width="300"></td>
+      <td><img src="Pictures/nahida2.png" alt="screenshot of desktop" width="300"></td>
+    </tr>
+  </table>
+</details>
