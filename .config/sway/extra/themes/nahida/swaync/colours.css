@@ -4,7 +4,7 @@
   --noti-bg: 106, 151, 121;
   --noti-bg-alpha: 1;
   --noti-bg-darker: rgb(38, 38, 38);
-  --noti-bg-hover: rgb(86, 136, 101);
+  --noti-bg-hover: rgba(255, 255, 255, 0);
   --noti-bg-focus: rgba(68, 68, 68, 0);
   --noti-close-bg: rgba(78, 78, 78, 0);
   --noti-close-bg-hover: rgba(94, 94, 94, 0);
@@ -16,12 +16,12 @@
   --notification-group-icon-size: 32px;
   --border-size: 6px;
   --border: var(--border-size) solid var(--noti-border-color);
-  --border-radius: 16px;
+  --border-radius: 20px;
   /* --notification-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3),
     0 1px 3px 1px rgba(0, 0, 0, 0.7), 0 2px 6px 2px rgba(0, 0, 0, 0.3); */
-  --notification-shadow: 7px 7px 5px #1A1A1ABB; 
-  --font-size-body: 20px;
-  --font-size-summary: 24px;
+  --notification-shadow: 10px 10px 5px #1A1A1ABB; 
+  --font-size-body: 18px;
+  --font-size-summary: 22px;
   /* Deprecated variables (because of their typos). Keeeping them around for backwards compatibility. */
   --hover-tranistion: background 0.15s ease-in-out;
   --group-collapse-tranistion: opacity 400ms ease-in-out;

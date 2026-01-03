@@ -1,4 +1,4 @@
-seat * xcursor_theme Bibata-Modern-Ice 24 
+seat * xcursor_theme Bibata-Modern-Ice 24
 
 font pango:Maple Mono NF CN Bold 12
 
@@ -10,15 +10,15 @@ gaps inner 15
 blur enable
 
 blur_xray true
-blur_passes 5 
+blur_passes 5
 blur_radius 4
 blur_saturation 1.2
 blur_brightness 0.95
 
 title_align center
 
-default_border pixel 6 
-default_floating_border pixel 4
+default_border pixel 6
+default_floating_border pixel 5
 
 corner_radius 16
 
@@ -32,7 +32,6 @@ dim_inactive_colors.urgent #000000FF
 
 layer_effects "waybar" {
     blur enable;
-    shadows enable;
     blur_ignore_transparent enable
 }
 
@@ -43,7 +42,7 @@ layer_effects "rofi" {
     shadows enable
 }
 
-layer_effects "swaync-control-center" { 
+layer_effects "swaync-control-center" {
     blur enable;
     blur_ignore_transparent enable
 }
