@@ -16,7 +16,7 @@ done
 
 echo ok
 
-hyprpicker -r -z &
+hyprpicker -rznq &
 
 sleep 0.2s
 

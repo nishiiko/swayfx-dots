@@ -11,7 +11,7 @@ fi
 
 freezeGuarantee() { #i hope its guaranteed at least
 if command -v hyprpicker > /dev/null; then
-    hyprpicker -r -n -z -q &
+    hyprpicker -rznq &
     false
     until [ $? -eq 0 ]; do
         swaymsg -r -t get_outputs | jq '.[0].layer_shell_surfaces | .[] | .namespace' | grep hyprpicker &>/dev/null
