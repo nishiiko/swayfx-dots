@@ -1,5 +1,5 @@
 set $mod Mod4
-set $term alacritty
+set $term exec sh -c 'alacritty msg create-window || alacritty'
 set $filemanager nautilus
 set $menu rofi -show drun
 
@@ -10,6 +10,7 @@ bindsym --to-code $mod+Shift+w focus mode_toggle
 bindsym --to-code $mod+h exec hyprpicker -r --autocopy
 bindsym --to-code $mod+k exec swaync-client -t
 bindsym --to-code $mod+l exec hyprlock --config $HOME/.config/sway/hyprlock.conf
+bindsym --to-code $mod+ctrl+shift+l exec fcitx5-remote -t
 
 bindsym --to-code $mod+Shift+c reload
 

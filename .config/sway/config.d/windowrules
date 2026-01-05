@@ -1,10 +1,10 @@
 for_window [all] allow_tearing yes
-for_window [app_id="^(com.app.Discord$|discord$|[Ff]irefox(-esr|-bin|)$)"] allow_tearing no
+for_window [app_id="^(discord$|vesktop$|[Ff]irefox(-esr|-bin|)$)"] allow_tearing no
 for_window [class="^(discord$)"] allow_tearing no
 for_window [all] opacity set 1.0 
 
 assign [app_id="^([Ff]irefox(-esr|-bin|)$)"] workspace 1
-assign [app_id="^(discord$|com.discordapp.Discord$)"] workspace 2
+assign [app_id="^(discord$|vesktop$)"] workspace 2
 assign [class="^(discord$)"] workspace 2
 assign [class="^(steam$)" title="^(Steam$|Sign in to Steam$|Special Offers$)"] workspace 3
 assign [app_id="^(Alacritty$)"] workspace 4
