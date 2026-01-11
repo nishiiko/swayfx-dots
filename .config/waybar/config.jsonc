@@ -10,7 +10,6 @@
   "reload_style_on_change": true,
   // Choose the order of the modules
   "modules-left": [
-  //  "wlr/taskbar",
     "group/connection",
     "group/hardware",
     "pulseaudio",
@@ -48,15 +47,6 @@
     ]
   },
 	
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 24,
-    "icon-theme": "Colloid-Purple-Dark",
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-middle": "close"
-  },
-
   "tray": {
     "icon-size": 24,
     "spacing": 8

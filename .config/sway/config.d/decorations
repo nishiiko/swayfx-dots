@@ -1,5 +1,7 @@
 seat * xcursor_theme Bibata-Modern-Ice 24
 
+animation_duration_ms 350
+
 font pango:Maple Mono NF CN Bold 12
 
 titlebar_separator disable
