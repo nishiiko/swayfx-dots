@@ -40,7 +40,8 @@
       "urgency": "Normal"
     },
     "Sound2": {
-      "exec": "bash -c '$HOME/.config/swaync/scripts/notification.sh'",
+      "exec": "bash -c 'paplay $HOME/.config/swaync/se_elevator_ding.ogg'",
+      "app-name": "^Screenshot$",
       "urgency": "Critical"
     },
     "example-action-script": {
@@ -54,11 +55,6 @@
       "state": "muted",
       "urgency": "Low",
       "app-name": "Spotify"
-    },
-    "niri": {
-      "app-name": "^niri$",
-      "summary": "^Screenshot captured$",
-      "override-urgency": "critical"
     }
   },
   "widgets": [
