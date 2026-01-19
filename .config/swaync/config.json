@@ -7,7 +7,7 @@
   "layer": "overlay",
   "control-center-layer": "overlay",
   "layer-shell": true,
-  "layer-shell-cover-screen": false,
+  "layer-shell-cover-screen": true,
   "cssPriority": "highest",
   "control-center-margin-top": 24,
   "control-center-margin-bottom": 24,
