@@ -38,7 +38,7 @@ layer_effects "waybar" {
 layer_effects "rofi" {
     blur enable;
     blur_ignore_transparent enable;
-    corner_radius 38;
+    corner_radius 36;
     shadows enable
 }
 
