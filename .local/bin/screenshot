@@ -9,7 +9,7 @@ if [ -e $lockdir ]; then
     exit
 fi
 
-freezeGuarantee() { #i hope its guaranteed at least
+freeze() { #i hope its guaranteed at least
 if command -v hyprpicker > /dev/null; then
     hyprpicker -rznq &
     false
@@ -19,7 +19,7 @@ if command -v hyprpicker > /dev/null; then
 fi
 }
 
-slorp () { # i swear this is all necessary just to launch slurp above hyprpicker i promise
+selectArea() { # i swear this is all necessary just to launch slurp above hyprpicker i promise
 time1=$(date +%s%3N)
 until [ ! -z "$area" ]; do
     area=$(slurp -d -c ffffffff -b 00000088 -w 3)
@@ -38,8 +38,8 @@ trap 'rm -rf $lockdir & pkill hyprpicker 2>/dev/null' EXIT
 case $1 in
     --region)
         type="Region"
-        freezeGuarantee
-        slorp
+        freeze
+        selectArea
         if [ -n "$area" ]; then
             grim -l 1 -g "$area" $tmpregion 
             gm convert $tmpregion -shave 4x4 PNG:$filename
