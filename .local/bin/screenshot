@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 filename=$HOME/Pictures/Screenshots/$(date +'Screenshot_%Y-%m-%d_%H-%M-%S.png')
 lockdir=$HOME/.tmpSwayCapture/
-lockpath=$lockdir/lockfile
 tmpregion=$lockdir/tmpCapture
 monitor=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
 
@@ -32,7 +31,7 @@ until [ ! -z "$area" ]; do
 done
 }
 
-mkdir -p $lockdir 2>/dev/null && touch $lockpath 2>/dev/null
+mkdir -p $lockdir 2>/dev/null
 trap 'rm -rf $lockdir & pkill hyprpicker 2>/dev/null' EXIT
 
 case $1 in
