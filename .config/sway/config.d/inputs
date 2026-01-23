@@ -17,7 +17,3 @@ input "type:touchpad" {
     dwt enabled 
     tap enabled 
 }
-
-input "type:tablet_tool" {
-    map_to_region 0 0 1920 1080
-}
