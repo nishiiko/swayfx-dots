@@ -12,5 +12,6 @@ exec swaymsg workspace number 1
 exec brightnessctl -r
 exec blueman-applet
 exec autotiling
+exec otd-daemon
 exec fcitx5 -d
 exec swaync
