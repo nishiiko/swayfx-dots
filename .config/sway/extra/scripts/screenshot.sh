@@ -2,18 +2,22 @@
 filename=$HOME/Pictures/Screenshots/$(date +'Screenshot_%Y-%m-%d_%H-%M-%S.png')
 lockdir=$HOME/.tmpSwayCapture/
 tmpregion=$lockdir/tmpCapture
-monitor=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
+monitor=$(swaymsg -rt get_outputs | jq -r '.[] | select(.focused==true).name')
 
 if [ -e $lockdir ]; then
+  echo 'Lock detected - Remove this directory:'
+  echo $lockdir
   exit
 fi
 
 freeze() { #i hope its guaranteed at least
 if command -v hyprpicker > /dev/null; then
-  hyprpicker -rznq &
+  hyprpicker -rzn &
   false
   until [ $? -eq 0 ]; do
-    swaymsg -r -t get_outputs | jq '.[0].layer_shell_surfaces | .[] | .namespace' | grep hyprpicker &>/dev/null
+    swaymsg -rt get_outputs \
+    | jq '.[0].layer_shell_surfaces | .[] | .namespace' \
+    | grep hyprpicker &>/dev/null
   done
 fi
 }

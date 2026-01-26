@@ -16,9 +16,9 @@ bindsym --to-code $mod+Shift+c reload
 bindsym --to-code $mod+F1 exec $HOME/.config/sway/extra/scripts/tearing.sh
 bindsym --to-code $mod+F2 exec $HOME/.config/sway/extra/scripts/dwt.sh
 
-bindsym --to-code $mod+Shift+r exec $HOME/.local/bin/screenshot --region
-bindsym --to-code $mod+Print exec $HOME/.local/bin/screenshot --all
-bindsym --to-code Print exec $HOME/.local/bin/screenshot --display
+bindsym --to-code $mod+Shift+r exec $HOME/.config/sway/extra/scripts/screenshot.sh --region
+bindsym --to-code $mod+Print exec $HOME/.config/sway/extra/scripts/screenshot.sh --all
+bindsym --to-code Print exec $HOME/.config/sway/extra/scripts/screenshot.sh --display
 
 bindsym --to-code --locked XF86MonBrightnessDown exec brightnessctl set 5%- -s
 bindsym --to-code --locked XF86MonBrightnessUp exec brightnessctl set 5%+ -s
