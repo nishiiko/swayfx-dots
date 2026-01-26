@@ -1,5 +1,4 @@
 for_window [all] allow_tearing yes
-for_window [app_id="^(discord$|[Ff]irefox(-esr|-bin|)$)"] allow_tearing no
 for_window [all] opacity set 1.0 
 
 assign [app_id="^([Ff]irefox(-esr|-bin|)$)"] workspace 1
