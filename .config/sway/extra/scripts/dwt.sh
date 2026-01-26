@@ -2,10 +2,8 @@
 
 if swaymsg -t get_inputs --raw | jq '.[] | select(.type=="touchpad")' | grep '"dwt": "disabled"' &>/dev/null; then
     swaymsg input "type:touchpad" dwt enabled
-    notify-send "DWT Toggle" "DWT Enabled" -u critical
+    notify-send "DWT Toggle" "DWT Enabled" -e -a sway-script
 else
     swaymsg input "type:touchpad" dwt disabled
-    notify-send "DWT Toggle" "DWT Disabled" -u critical
+    notify-send "DWT Toggle" "DWT Disabled" -e -a sway-script
 fi
-
-paplay $HOME/.config/swaync/ding.wav --volume=45000 &

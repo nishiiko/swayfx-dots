@@ -39,9 +39,14 @@
       "exec": "bash -c '$HOME/.config/swaync/scripts/notification.sh'",
       "urgency": "Normal"
     },
-    "Sound2": {
+    "Screenshot": {
       "exec": "bash -c 'paplay $HOME/.config/swaync/se_elevator_ding.ogg'",
       "app-name": "^Screenshot$",
+      "urgency": "Critical"
+    },
+    "Sway-script": {
+      "exec": "bash -c 'paplay $HOME/.config/swaync/GEN_Jump.ogg'",
+      "app-name": "^sway-script$",
       "urgency": "Critical"
     },
     "example-action-script": {
@@ -55,6 +60,14 @@
       "state": "muted",
       "urgency": "Low",
       "app-name": "Spotify"
+    },
+    "Sound": {
+      "app-name": "^sway-script$",
+      "override-urgency": "critical"
+    },
+    "Screenshot": {
+      "app-name": "^Screenshot$",
+      "override-urgency": "critical"
     }
   },
   "widgets": [

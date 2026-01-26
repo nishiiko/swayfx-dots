@@ -13,6 +13,7 @@ bindsym --to-code $mod+shift+w focus mode_toggle
 
 bindsym --to-code $mod+Shift+c reload
 
+bindsym --to-code $mod+F1 exec $HOME/.config/sway/extra/scripts/tearing.sh
 bindsym --to-code $mod+F2 exec $HOME/.config/sway/extra/scripts/dwt.sh
 
 bindsym --to-code $mod+Shift+r exec $HOME/.local/bin/screenshot --region
