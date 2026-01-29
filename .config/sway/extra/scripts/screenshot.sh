@@ -23,12 +23,12 @@ fi
 }
 
 selectArea() { # i swear this is all necessary just to launch slurp above hyprpicker i promise
-time1=$(date +%s%3N)
+time1=$(date +%s%N)
 until [ ! -z "$area" ]; do
   area=$(slurp -d -c ffffffff -b 00000088 -w 3)
-  time2=$(date +%s%3N)
+  time2=$(date +%s%N)
   elapsed=$(($time2-$time1))
-  if [[ $elapsed -gt 250 ]]; then
+  if [[ $elapsed -gt 250000000 ]]; then
     break
   fi
   time1=$time2
