@@ -8,6 +8,8 @@ assign [app_id="^(Alacritty$)"] workspace 4
 assign [app_id="^(spotify$)"] workspace 9
 assign [app_id="^(com.obsproject.Studio$)" title="^(OBS.*$)"] workspace 10
 
+for_window [app_id="^(alacrittyScratch$)"] , move scratchpad
+
 for_window [class="^(steam_app_.*$)"] fullscreen enable
 
 # floats
