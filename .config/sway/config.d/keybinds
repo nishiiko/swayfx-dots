@@ -42,25 +42,15 @@ floating_modifier $mod normal
 bindsym --to-code $mod+b splith
 bindsym --to-code $mod+v splitv
 
-bindsym --to-code $mod+Left focus left
-bindsym --to-code $mod+Down focus down
-bindsym --to-code $mod+Up focus up
-bindsym --to-code $mod+Right focus right
-
-bindsym --to-code $mod+Shift+Left move left
-bindsym --to-code $mod+Shift+Down move down
-bindsym --to-code $mod+Shift+Up move up
-bindsym --to-code $mod+Shift+Right move right
-
 bindsym --to-code $mod+n focus left
 bindsym --to-code $mod+e focus down
 bindsym --to-code $mod+i focus up
 bindsym --to-code $mod+o focus right
 
-bindsym --to-code $mod+Shift+n move left
-bindsym --to-code $mod+Shift+e move down
-bindsym --to-code $mod+Shift+i move up
-bindsym --to-code $mod+Shift+o move right
+bindsym --to-code $mod+Shift+n mark swap, focus left, swap container with mark swap, focus left, mark --toggle swap
+bindsym --to-code $mod+Shift+e mark swap, focus down, swap container with mark swap, focus down, mark --toggle swap
+bindsym --to-code $mod+Shift+i mark swap, focus up, swap container with mark swap, focus up, mark --toggle swap
+bindsym --to-code $mod+Shift+o mark swap, focus right, swap container with mark swap, focus right, mark --toggle swap
 
 bindsym --to-code $mod+1 workspace number 1
 bindsym --to-code $mod+2 workspace number 2
