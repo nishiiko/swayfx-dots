@@ -7,7 +7,6 @@ exec $HOME/.config/sway/extra/scripts/floating.sh
 exec $HOME/.config/sway/extra/scripts/portals.sh
 exec $HOME/.config/sway/extra/scripts/waybar.sh
 exec $HOME/.config/waybar/scripts/vpn-watch.sh
-exec "alacritty --class alacrittyScratch"
 exec rm -rf $HOME/.tmpSwayCapture/
 exec swaymsg workspace number 1
 exec brightnessctl -r
