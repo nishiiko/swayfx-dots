@@ -2,7 +2,7 @@
 
 old=0
 while read -r line; do
-  read -r new visible <<< $(echo "$line" | jq -r '.. | select(.type?) | select(.focused==true) | .id, .visible' | tr '\n' ' ')
+  read -r new visible <<< $(echo "$line" | jq -r '.container | select(.focused==true) | .id, .visible' | tr '\n' ' ')
 
   if [[ ! $visible ]] || \
      [[ $old -eq $new ]]; then
