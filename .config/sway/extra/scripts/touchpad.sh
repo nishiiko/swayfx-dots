@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 while read -r line; do
-  state=$(echo "$line" | jq -r 'select(.input.type=="pointer") | .change')
+  state=$(echo "$line" | jq -r 'select(.input.type=="pointer").change')
 
   if [[ $state == 'added' ]]; then
     swaymsg input type:touchpad events toggle disabled
