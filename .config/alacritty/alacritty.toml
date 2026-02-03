@@ -5,7 +5,7 @@ import = ["~/.config/alacritty/colours.toml"]
 opacity = 0.85
 padding = { x = 10, y = 10 } 
 decorations = "None"
-dimensions = { columns = 100, lines = 30 }
+dimensions = { columns = 110, lines = 30 }
 
 [font]
 normal = { family = "Maple Mono NF CN", style = "bold" }

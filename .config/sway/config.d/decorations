@@ -27,7 +27,6 @@ shadow_color #1A1A1AAA
 shadow_blur_radius 5
 shadow_offset 10 10
 
-default_dim_inactive 0.2
 dim_inactive_colors.urgent #000000FF
 
 layer_effects "waybar" {
