@@ -3,7 +3,6 @@ exec $HOME/.config/sway/extra/scripts/opacity.sh 0.85 1
 exec /usr/libexec/polkit-mate-authentication-agent-1
 exec $HOME/.config/sway/extra/scripts/wallpaper.sh
 exec $HOME/.config/sway/extra/scripts/floating.sh
-exec $HOME/.config/sway/extra/scripts/touchpad.sh
 exec $HOME/.config/sway/extra/scripts/pipewire.sh
 exec $HOME/.config/sway/extra/scripts/portals.sh
 exec $HOME/.config/sway/extra/scripts/waybar.sh
