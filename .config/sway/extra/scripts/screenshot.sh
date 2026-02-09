@@ -10,7 +10,7 @@ if [ -e $lockdir ]; then
   exit
 fi
 
-freeze() { #i hope its guaranteed at least
+freeze() {
 if command -v hyprpicker > /dev/null; then
   hyprpicker -rzn &
   false
@@ -22,7 +22,7 @@ if command -v hyprpicker > /dev/null; then
 fi
 }
 
-selectArea() { # i swear this is all necessary just to launch slurp above hyprpicker i promise
+selectArea() {
 time1=$(date +%s%N)
 until [ ! -z "$area" ]; do
   area=$(slurp -d -c ffffffff -b 00000088 -w 3)
