@@ -2,11 +2,11 @@
 
 wm_test () {
   if [ "$XDG_CURRENT_DESKTOP" = "sway" ]; then
-    swaymsg no_focus [title="^3eGiiqb6Ew.gif$"]
-    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] sticky enable 
-    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] blur disable
-    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] border none
-    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] shadows disable
+    swaymsg no_focus [title="^3eGiiqb6Ew.gif - mpv$"]
+    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] sticky enable 
+    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] blur disable
+    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] border none
+    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] shadows disable
     pkill --uid $(id --user) bash
   elif [ "$XDG_CURRENT_DESKTOP" = "niri" ]; then
     continue
@@ -22,7 +22,7 @@ main () {
       --background=none \
       --keep-open=yes \
       --geometry=355x490 \
-      /opt/explode/explosion-boom.gif \
+      /opt/explode/3eGiiqb6Ew.gif \
       --audio-file=/opt/explode/deltarune-explosion.mp3 &>/dev/null
   loginctl poweroff
   sleep 5s
