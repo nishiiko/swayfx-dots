@@ -20,7 +20,7 @@ main () {
       --input-builtin-bindings=no \
       --osc=no \
       --background=none \
-      --keep-open=yes \
+      --keep-open=no \
       --geometry=355x490 \
       /opt/explode/3eGiiqb6Ew.gif \
       --audio-file=/opt/explode/deltarune-explosion.mp3 &>/dev/null
