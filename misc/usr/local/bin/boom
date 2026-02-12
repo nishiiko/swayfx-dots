@@ -1,0 +1,35 @@
+#!/usr/bin/env sh
+
+wm_test () {
+  if [ "$XDG_CURRENT_DESKTOP" = "sway" ]; then
+    swaymsg no_focus [title="^3eGiiqb6Ew.gif$"]
+    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] sticky enable 
+    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] blur disable
+    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] border none
+    swaymsg for_window [title="^3eGiiqb6Ew.gif$"] shadows disable
+    pkill --uid $(id --user) bash
+  elif [ "$XDG_CURRENT_DESKTOP" = "niri" ]; then
+    continue
+  fi
+}
+
+main () {
+  mpv --input-cursor=no \
+      --input-vo-keyboard=no \
+      --input-default-bindings=no \
+      --input-builtin-bindings=no \
+      --osc=no \
+      --background=none \
+      --keep-open=yes \
+      --geometry=355x490 \
+      /opt/explode/explosion-boom.gif \
+      --audio-file=/opt/explode/deltarune-explosion.mp3 &>/dev/null
+  loginctl poweroff
+  sleep 5s
+}
+
+if [ $(id -u) = 0 ]; then
+  exit 1
+fi
+
+main
