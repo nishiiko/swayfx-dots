@@ -2,11 +2,11 @@
 
 wm_test () {
   if [ "$XDG_CURRENT_DESKTOP" = "sway" ]; then
-    swaymsg no_focus [title="^3eGiiqb6Ew.gif - mpv$"]
-    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] sticky enable 
-    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] blur disable
-    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] border none
-    swaymsg for_window [title="^3eGiiqb6Ew.gif - mpv$"] shadows disable
+    swaymsg no_focus [title="^3eGiiqb6Ew.gif\s-\smpv$"]
+    swaymsg for_window [title="^3eGiiqb6Ew.gif\s-\smpv$"] sticky enable 
+    swaymsg for_window [title="^3eGiiqb6Ew.gif\s-\smpv$"] blur disable
+    swaymsg for_window [title="^3eGiiqb6Ew.gif\s-\smpv$"] border none
+    swaymsg for_window [title="^3eGiiqb6Ew.gif\s-\smpv$"] shadows disable
     pkill --uid $(id --user) bash
   elif [ "$XDG_CURRENT_DESKTOP" = "niri" ]; then
     continue
@@ -34,4 +34,5 @@ if [ $(id -u) = 0 ]; then
   exit 1
 fi
 
+wm_test
 main
