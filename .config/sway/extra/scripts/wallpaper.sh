@@ -1,1 +1,1 @@
-../themes/tanger/wallpaper.sh
+../themes/omori/wallpaper.sh
