@@ -34,15 +34,15 @@ ln -sfrv $PWD/$theme/wallpaper.sh $HOME/.config/sway/extra/scripts/wallpaper.sh
 
 swaync-client -R &
 swaync-client -rs &
-$HOME/.config/sway/extra/scripts/wallpaper.sh &
-pkill -x waybar ; waybar &
+$HOME/.config/sway/extra/scripts/wallpaper.sh & disown
+pkill -x waybar ; waybar & disown
 
 swaymsg reload
 
 false
 until [ $? -eq 0 ]; do
   swaymsg -r -t get_outputs \
-  | jq '.[0].layer_shell_surfaces | .[] | .namespace' \
+  | jq '.[].layer_shell_surfaces | .[] | .namespace' \
   | grep waybar &>/dev/null
 done
 

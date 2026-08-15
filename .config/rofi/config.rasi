@@ -1,28 +1,28 @@
 configuration {
 	drun-display-format: "{name}";
-	font: "MapleMono NF CN 18";
+	font: "MapleMono NF CN 20";
 	modi: "drun,run,emoji";
 
 	sort: true;
-	history: false;
-	case-sensitivity: false;
 	sorting-method: "fzf";
 	matching: "fuzzy";
+	disable-history: true;
+	case-sensitivity: false;
 	hide-scrollbar: true;
 	terminal: "alacritty";
 	sidebar-mode: true;
-	hover-select: false;
+	hover-select: true;
 }
 
 @theme "~/.config/rofi/colours.rasi"
 
 window {
 	background-color: @main-bg;
-	border: 6px;
+	border: 0.2em;
 	border-color: @border;
-	border-radius: 32px;
-	height: 440px;
-	width: 1000px;
+	border-radius: 1.5em;
+	height: 15em;
+	width: 37.5em;
 }
 
 mainbox {
@@ -37,8 +37,8 @@ omori {
 }
 
 listbox {
-	width: 350px;
-	padding: 10px;
+	width: 15em;
+	padding: 0.5em;
 	expand: false;
 	orientation: vertical;
 	children: [ inputbar, listview, mode-switcher ];
@@ -47,12 +47,12 @@ listbox {
 
 listview {
 	background-color: transparent;
-	padding: 10px;
+	padding: 0em 0em;
 	expand: false;
-	lines: 5;
+	lines: 6;
 }
 
-mode-switcher {	
+mode-switcher {
 	background-color: transparent;
 }
 
@@ -67,11 +67,11 @@ button.selected {
 }
 
 inputbar {
-	padding: 10px;
+	padding: 0.2em;
 	background-color: transparent;
 }
 prompt {
-	text-color: @active-text;	
+	text-color: @active-text;
 	background-color: transparent;
 }
 
@@ -83,18 +83,18 @@ element {
 	background-color: transparent;
 	orientation: horizontal;
 	children: [ element-text, element-icon ];
-	spacing: 5px;
+	spacing: 0em;
 }
 
 element-icon {
 	background-color: transparent;
-	padding: 5px 10px 5px 0px;
-	size: 45px;
+	padding: 0.2em 0.4em 0.2em 0em;
+	size: 1.4em;
 }
 
 entry,
 element-text {
-	padding: 0px 10px;
+	padding: 0em 0.5em;
 	text-color: @passive-text;
 	background-color: transparent;
 	highlight: #ffaa00;
@@ -106,7 +106,7 @@ element-text {
 
 element.selected {
 	background-color: @active-bg;
-	border-radius: 16px;
+	border-radius: 0.8em;
 }
 element-text.selected {
 	text-color: @active-text;

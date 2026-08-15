@@ -75,7 +75,7 @@ esac
 
 if [ -f "$filename" ]; then
   wl-copy < $filename &
-  $(notify-send "$type Screenshot" "Saved to $filename" --icon=$filename -a Screenshot -A "xdg-open $filename=View screenshot") &
+  $(notify-send "$type Screenshot" "Saved to $filename" --icon=$filename -a sway-script -A "xdg-open $filename=View screenshot") &
 fi
 
 exit

@@ -39,8 +39,9 @@ bindsym --to-code $mod+minus scratchpad show
 
 floating_modifier $mod normal
 
-bindsym --to-code $mod+b splith
-bindsym --to-code $mod+v splitv
+#bindsym --to-code $mod+b splith
+#bindsym --to-code $mod+v splitv
+
 
 bindsym --to-code $mod+n focus left
 bindsym --to-code $mod+e focus down

@@ -1,7 +1,8 @@
-seat seat0 xcursor_theme Bibata-Modern-Ice 24
+seat seat0 xcursor_theme Bibata-Modern-Ice 32
 
 font pango:Maple Mono NF CN Bold 12
 
+animation_duration_ms 250
 titlebar_separator disable
 titlebar_padding 8
 
@@ -37,7 +38,7 @@ layer_effects "waybar" {
 layer_effects "rofi" {
     blur enable;
     blur_ignore_transparent enable;
-    corner_radius 36;
+    corner_radius 56;
     shadows enable
 }
 
