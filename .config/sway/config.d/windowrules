@@ -27,6 +27,7 @@ for_window [app_id="^(eog$)"] floating enable
 for_window [app_id="^(org.twosheds.iwgtk$)"] floating enable
 for_window [app_id="^(iwgtk$)"] floating enable
 for_window [app_id="^(io.missioncenter.MissionCenter$)"] floating enable
+for_window [app_id="^(com.saivert.pwvucontrol$)"] floating enable
 for_window [app_id="^(org.pulseaudio.pavucontrol$)"] floating enable
 for_window [app_id="^(piper$)"] floating enable
 for_window [app_id="^(blueman-manager$)"] floating enable
