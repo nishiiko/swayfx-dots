@@ -2,9 +2,10 @@
 import = ["~/.config/alacritty/colours.toml"]
 
 [window]
-opacity = 1
+opacity = 0.85
 padding = { x = 10, y = 10 }
 decorations = "None"
+blur = true
 
 [font]
 normal = { family = "Maple Mono NF CN", style = "bold" }

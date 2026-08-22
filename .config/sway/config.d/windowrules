@@ -20,6 +20,7 @@ for_window [class="^(steam$)" title="^(?!Steam$)"] floating enable
 for_window [class="^(love$)"] floating enable
 for_window [app_id="^(soffice$)" title="^(Open$)"] floating enable
 for_window [app_id="^([Ff]irefox$)" title="^(Library$)"] floating enable
+for_window [app_id="^(org.kde.kdenlive$)" title="^(Splash Screen — Kdenlive$)"] floating enable
 
 for_window [app_id="^(org.fcitx.fcitx5-config-qt$)"] floating enable
 for_window [app_id="^(org.gnome.Nautilus$)"] floating enable
